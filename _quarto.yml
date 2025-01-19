@@ -2,8 +2,10 @@ project:
   type: website
   output-dir: docs
 
+
 website:
   title: "EMPRA"
+  favicon: assets/images/logo-square.png
   navbar:
     logo: assets/images/logo-small.png
     left:

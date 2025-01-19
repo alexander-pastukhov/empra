@@ -75,19 +75,34 @@ submissions <-
   arrange(FirstAuthor)
 
 printout_submission <- function(entry) {
-  cat('<table style="width:100%;"><tr>')
-  cat('<td style="vertical-align:top;">')
-    cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
-  cat("<details><summary>Abstract</summary>", entry$Abstract, "</details>")
-  cat('</td>')
-
-  cat('<td style="text-align:right; vertical-align:top; width:50px;">')
-  if (!is.na(entry$Content)) {
-    cat('<a href="', entry$Year, "/", entry$Content, '" target="_blank">', 
-        sprintf('<img src="assets/icons/%s.svg" alt="Poster" style="width:30px;"/>', entry$Type), 
-        '</a>', sep="")
-  }
-  cat('</td></tr></table><br/>')
+  # cat('<table style="width:100%;"><tr>')
+  # cat('<td style="vertical-align:top;">')
+  #   cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
+  # cat("<details><summary>Abstract</summary>", entry$Abstract, "</details>")
+  # cat('</td>')
+  # 
+  # cat('<td style="text-align:right; vertical-align:top; width:50px;">')
+  # if (!is.na(entry$Content)) {
+  #   cat('<a href="', entry$Year, "/", entry$Content, '" target="_blank">', 
+  #       sprintf('<img src="assets/icons/%s.svg" alt="Poster" style="width:30px;"/>', entry$Type), 
+  #       '</a>', sep="")
+  # }
+  # cat('</td></tr></table><br/>')
+  
+  cat('::: {.grid}\n')
+    cat('::: {.g-col-10}\n')
+      cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
+      cat("<details><summary>Abstract</summary>", entry$Abstract, "</details>\n")
+    cat(':::\n')
+        
+    cat('::: {.g-col-2}\n')
+      if (!is.na(entry$Content)) {
+        cat('<a href="', entry$Year, "/", entry$Content, '" target="_blank">',
+            sprintf('<img src="assets/icons/%s.svg" alt="Poster" style="width:30px;"/>', entry$Type),
+            '</a>\n', sep="")
+      }
+  cat(':::\n')
+cat(':::\n')
 }
 ```
 

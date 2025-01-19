@@ -6,6 +6,7 @@ project:
 website:
   title: "EMPRA"
   favicon: assets/images/logo-square.png
+  site-url: https://alexander-pastukhov.github.io/empra
   navbar:
     logo: assets/images/logo-small.png
     left:

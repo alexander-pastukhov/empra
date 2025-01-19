@@ -1,0 +1,46 @@
+---
+title: "Empiriepraktikum"
+lang: de
+---
+
+```{r}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+source("submission_utils.R")
+
+empra_year <- 2025
+submissions <- load_years_submissions(empra_year)
+```
+
+Das Empiriepraktikum, auch EMPRA genannt, ist ein praxisorientierter Kurs, der sich auf die eigenständige Planung, Durchführung und kritische Analyse empirischer Forschung konzentriert. Die Teilnehmer entwickeln Fähigkeiten in der Formulierung von Forschungsfragen, der Erstellung und Prüfung von Hypothesen, dem Entwurf von Forschungsplänen, der Durchführung empirischer Studien und der Analyse und kritischen Diskussion der Ergebnisse. Das Seminar integriert Projekterfahrungen, um die Fähigkeit der Studierenden zu verbessern, ihre eigenen Forschungsergebnisse effektiv durchzuführen und zu präsentieren.
+
+## EMPRA Conference 2025
+
+### Wann und wo
+Die Empra-Konferenz findet am **Freitag, 24. Januar** von 10 bis 14 Uhr statt. Der Veranstaltungsort ist **M3N/2.32** sowie das Foyer vor diesem Vortragsraum.
+
+### Vorläufiges Programm
+
+* Begrüßung (Prof. Carbon).
+* Keynote-Vortrag (Stefan Breitschaft, ehemaliger Student der Universität Bamberg, jetzt bei der BMW Group tätig).
+* Vortragssitzung I.
+* Postersession I.
+* Vortragssitzung II.
+* Postersession II. 
+
+### Vorträge
+```{r talks-2025-de, results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+list_submissions(submissions, "talk", rmarkdown::metadata$lang)
+```
+
+### Posters
+```{r posters-2025-de, results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+list_submissions(submissions, "poster", rmarkdown::metadata$lang)
+```

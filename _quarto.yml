@@ -22,3 +22,14 @@ format:
       <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
     toc: true
 
+babelquarto:
+  languagelinks: navbar
+  languagecodes:
+  - name: de
+    text: "Deutsch"
+  - name: en
+    text: "English"
+  mainlanguage: 'en'
+  languages: ['de']
+title-de: EMPRA
+lang: en

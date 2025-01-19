@@ -1,21 +1,19 @@
 ---
 title: "Empiriepraktikum"
+lang: en
 ---
 
 ```{r}
 #| echo: FALSE
 #| warning: FALSE
 #| message: FALSE
-library(tidyverse)
+source("submission_utils.R")
 
-library(yaml)
+empra_year <- 2025
+submissions <- load_years_submissions(empra_year)
 ```
 
 The Empiriepraktikum seminar, a.k.a. EMPRA, is a practical course focused on the independent planning, implementation, and critical analysis of empirical research. Participants develop skills in formulating research questions, creating and testing hypotheses, designing research plans, conducting empirical studies, and analyzing and critically discussing the results. The seminar integrates project experiences to enhance the students' ability to conduct and present their own research findings effectively.
-
-
-
-
 
 
 ## EMPRA Conference 2025
@@ -32,94 +30,19 @@ The Empra conference will take place on **Friday, January 24th** from 10 to 14 o
 * Talk session II.
 * Poster session II. 
 
-### Submission rules
-Each project group must submit a 200 words abstract in English or German language. For the poster, you must prepare A0-size poster.
-
-
-```{r results='asis'}
-#| echo: FALSE
-#| warning: FALSE
-#| message: FALSE
-
-empra_year <- 2025
-submissions_yaml <- read_yaml(sprintf("%d/submissions.yaml", empra_year))
-
-entry_to_tibble <- function(yaml_entry) {
-  # format authors
-  authors <- ""
-  for(iauthor in 1:length(yaml_entry$authors)) {
-    if (iauthor > 1) {
-      if (iauthor == length(yaml_entry$authors)) {
-        authors <- str_c(authors, " & ")
-      } else {
-        authors <- str_c(authors, ", ")
-      }
-    }
-    authors <- str_c(authors, yaml_entry$authors[[iauthor]]$name, " ", yaml_entry$authors[[iauthor]]$lastname)
-  }
-  
-  tibble(Title = yaml_entry$title,
-         Authors = authors,
-         FirstAuthor = yaml_entry$authors[[1]]$lastname,  
-         Supervisor = yaml_entry$supervisor,
-         Abstract = yaml_entry$abstract,
-         Content = ifelse(is.null(yaml_entry$content), NA, yaml_entry$content),
-         Type = yaml_entry$type, 
-         Year = empra_year)
-}
-
-submissions <- 
-  purrr::map(submissions_yaml, ~entry_to_tibble(.)) |>
-  list_rbind() |>
-  group_by(Type) |>
-  arrange(FirstAuthor)
-
-printout_submission <- function(entry) {
-  # cat('<table style="width:100%;"><tr>')
-  # cat('<td style="vertical-align:top;">')
-  #   cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
-  # cat("<details><summary>Abstract</summary>", entry$Abstract, "</details>")
-  # cat('</td>')
-  # 
-  # cat('<td style="text-align:right; vertical-align:top; width:50px;">')
-  # if (!is.na(entry$Content)) {
-  #   cat('<a href="', entry$Year, "/", entry$Content, '" target="_blank">', 
-  #       sprintf('<img src="assets/icons/%s.svg" alt="Poster" style="width:30px;"/>', entry$Type), 
-  #       '</a>', sep="")
-  # }
-  # cat('</td></tr></table><br/>')
-  
-  cat('::: {.grid}\n')
-    cat('::: {.g-col-10}\n')
-      cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
-      cat("<details><summary>Abstract</summary>", entry$Abstract, "</details>\n")
-    cat(':::\n')
-        
-    cat('::: {.g-col-2}\n')
-      if (!is.na(entry$Content)) {
-        cat('<a href="', entry$Year, "/", entry$Content, '" target="_blank">',
-            sprintf('<img src="assets/icons/%s.svg" alt="Poster" style="width:30px;"/>', entry$Type),
-            '</a>\n', sep="")
-      }
-  cat(':::\n')
-cat(':::\n')
-}
-```
 
 ### Talks
-```{r results='asis'}
+```{r talks-2025-en, results='asis'}
 #| echo: FALSE
 #| warning: FALSE
 #| message: FALSE
-talks_df <- filter(submissions, Type == "talk")
-purrr::walk(1:nrow(talks_df), ~printout_submission(talks_df[., ]))
+list_submissions(submissions, "talk", rmarkdown::metadata$lang)
 ```
 
 ### Posters
-```{r results='asis'}
+```{r posters-2025-en, results='asis'}
 #| echo: FALSE
 #| warning: FALSE
 #| message: FALSE
-posters_df <- filter(submissions, Type == "poster")
-purrr::walk(1:nrow(posters_df), ~printout_submission(posters_df[., ]))
+list_submissions(submissions, "poster", rmarkdown::metadata$lang)
 ```

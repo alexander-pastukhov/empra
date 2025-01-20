@@ -1,0 +1,34 @@
+---
+title: "Going further"
+lang: en
+---
+
+
+```{r}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+source("submission_utils.R")
+```
+
+The idea of the EMPRA is to let students carry out a realistic research project. And sometimes, the quality of work is so high that it deserve attention of the research community. Here are EMPRA projects from past years that ended up as a publication in a peer-reviewed journal or at an international scientific conference. Below, student authors are marked in bold.
+
+## Publications in peer-reviewed journals
+
+```{r empra-publications-en, results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+print_out_empra_publications(rmarkdown::metadata$lang)
+```
+
+
+## Conference proceedings
+
+```{r empra-conferences-en, results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+print_out_empra_conferences(rmarkdown::metadata$lang)
+```
+

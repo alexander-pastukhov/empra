@@ -1,0 +1,50 @@
+- title: Perceptual dominance in face rivalry is driven by low-level properties
+  year: 2019
+  authors:
+  - name: Lisa
+    lastname: Koßmann
+    empra_student: yes
+  - name: Claus-Christian
+    lastname: Carbon
+  - name: Alexander
+    lastnme: Pastukhov
+  conference: European Conference on Visual Perception
+  abstract: >
+    Two superimposed semi-transparent orthogonally-oriented faces produce perceptual rivalry with one face being clearly perceived at a time and perception continuously switching between them. We investigated whether perceptual dominance of an individual face is determined by high-level properties, such as gender, age, or emotion, or low-level properties. To this end, we used twenty female and twenty male faces, aged 20 to 25, from the Chicago Face Database. They were randomly paired using a round-robin tournament schedule (eight blocks, twenty trials each). Participants viewed a face pair and continuously indicated which face they currently perceive via key presses. We computed two measures of face dominance, (i) as a proportion of trials in which it was the first face perceived at onset and (ii) as a proportion of time it was dominant throughout the trial. An exploratory data analysis using linear mixed models showed no systematic relationship between either of the two measures and high-level face descriptors, such as gender, age, or emotions (see https://osf.io/q2fjd). We conclude that in face rivalry perceptual dominance is determined primarily by low-level features such as the size or relative width of the face, or salient local features such as birthmarks.
+
+- title: Perceptual dominance in face rivalry is driven by low-level properties
+  year: 2019
+  authors:
+  - name: Malin
+    lastname: Styrnal
+    empra_student: yes
+  - name: Katharina
+    lastname: Walther
+    empra_student: yes
+  - name: Alexander
+    lastnme: Pastukhov
+  - name: Claus-Christian
+    lastname: Carbon
+  conference: European Conference on Visual Perception
+  abstract: >
+    Multistable perception is typically studied using artificial stimuli, such as Necker cube. However, there are many photos posted online that are visually incongruent or produce bistable perception. We compiled a set of 103 unusual looking photos plus a complimentary set of 309 unambiguous but visually similar photos that can be used to study multistability using more naturalistic stimuli (https://osf.io/xezny). During each of the 103 trials, four photos (one target, three controls) were presented in four quadrants in random order, while observers’ gaze was monitored via an eye tracker. Observers were (i) asked to locate the target (unusual photo), (ii) to categorize the chosen photo as either bistable or visually incongruent, (iii) report their confidence, and (iv) report whether they had seen that photo before. Only few photos were categorized as purely bistable or visually incongruent. However, participants were very consistent in identifying the part of the image that had the visual conflict. Although odd photos were not visited sooner than control ones, once participants’ gaze landed on them, they were looked at for a significantly longer time than control photos. This indicates that visual conflict in naturalistic images is salient enough to retain attention and to command a prolonged inspection.
+
+- title: Attention works as a filter for prior perceptual decision in serial dependence
+  year: 2024
+  authors:
+  - name: Lena
+    lastname: Schädlich
+    empra_student: yes
+  - name: Alicia
+    lastname: Weithase
+    empra_student: yes
+  - name: Alexander
+    lastnme: Pastukhov
+  - name: Claus-Christian
+    lastname: Carbon
+  conference: European Conference on Visual Perception
+  abstract: >
+    Our perception reflects current sensory evidence but also the history of our previous perceptual decisions. This phenomenon is called serial dependence and is based on the assumption that the world around us is sufficiently stable and a recently made perceptual decision can be used as a supplementary source of information to reduce the uncertainty. In the case of the numerosity judgments, this means that responses for the same stimulus will be higher if it is a part of a descending sequence, as the preceding value is always larger biasing perception upwards, than for an ascending sequence. We tested this using a numerosity judgment task where participants had to estimate the numerosity of briefly presented dots either in full or divided attention conditions. We observed a strong serial dependence both in single and dual tasks. To quantify the effect of prior perception and attention, we used a modified Bayesian integration model that assumed (1) a non-monotonic relationship between numerosity and uncertainty, (2) a Gaussian distance measure between numerosity levels with a scale parameter controlling the relevance of prior decision for the current trial, i.e., smaller scale values mean that only nearby numerosity values are included into the decision, whereas large scale values mean lack of selectivity as any prior numerosity is included. We report that (1) overall uncertainty was the same for both attention conditions, (2) the weight of prior evidence was higher during poor attention blocks, (3) high selectivity (small values of scale parameter) during full attention but virtually no selectivity of prior evidence during poor attention. To summarize, consistent with the idea of attention as a filter, we found that although the prior perceptual decision was used with both full and poor attention, in the latter case it was used indiscriminately, irrespective of its relevance to the current judgment.
+
+
+

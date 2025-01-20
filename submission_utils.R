@@ -1,6 +1,37 @@
 library(tidyverse)
+
+library(glue)
 library(slider)
 library(yaml)
+
+translations <- list("Abstract" = c("en" = "Abstract", "de" = "Abstrakt"))
+
+
+#' Format authors list
+#'
+#' @param authors_list A list of authors, each author is a list with fields "name", "lastname", and "empra_student" (optional).
+#'
+#' @returns A character vector with the formatted authors list.
+format_authors_list <- function(authors_list) {
+  # format authors
+  authors <- ""
+  for(iauthor in 1:length(authors_list)) {
+    if (iauthor > 1) {
+      if (iauthor == length(authors_list)) {
+        authors <- str_c(authors, " & ")
+      } else {
+        authors <- str_c(authors, ", ")
+      }
+    }
+    if ("empra_student" %in% names(authors_list[[iauthor]])) {
+      authors <- str_c(authors, "**", authors_list[[iauthor]]$name, " ", authors_list[[iauthor]]$lastname, "**", sep = "")
+    } else {
+      authors <- str_c(authors, authors_list[[iauthor]]$name, " ", authors_list[[iauthor]]$lastname, sep = "")
+    }
+  }
+  authors
+}
+
 
 #' Parse a YAML entry into a tibble
 #'
@@ -59,9 +90,6 @@ load_years_submissions <- function(empra_year) {
 #'
 #' @returns A character vector with the HTML code for the entry.
 submission_html <- function(entry, page_language) {
-
-  translations <- list("Abstract" = c("en" = "Abstract", "de" = "Abstrakt"))
-
   cat('::: {.grid}\n')
     cat('::: {.g-col-10}\n')
       cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
@@ -88,4 +116,70 @@ list_submissions <- function(submissions, submission_type, page_language) {
     filter(Type == submission_type) |>
     slider::slide(~submission_html(., page_language)) ->
     hide_return_values
+}
+
+
+#' Format a single publication
+#'
+#' @param entry A list with fields "title", "authors", "journal", "volume", "issue", "pages", "doi", "year".
+#'
+#' @returns tibble with columns "Year", "FirstAuthor", "Citation", "Abstract".
+process_empra_publication <- function(entry) {
+  tibble(Year = entry$year,
+         FirstAuthor = entry$authors[[1]]$lastname,
+         Citation = glue('{format_authors_list(entry$authors)} ({entry$year}) "{entry$title}"_{entry$journal}_, {entry$volume}({entry$issue}), {entry$pages}. doi: [{entry$doi}](https://doi.org/{entry$doi})'),
+         Abstract = entry$abstract)
+}
+
+
+#' Format and print out all publications for a year
+#'
+#' @param year Year of the publications
+#' @param citations A character vector with the formatted citations
+#' @param page_language Language of the page, used to format the HTML code.
+format_publications_for_year <- function(year, citations_df, page_language) {
+  cat(glue("### {year}\n\n"))
+  for(iC in 1:nrow(citations_df)) {
+    cat(citations_df$Citation[iC], "\n\n")
+    cat("<details><summary>", translations[['Abstract']][page_language], "</summary>", citations_df$Abstract[iC], "</details>\n")
+  }
+}
+
+
+#' Load, format, and print out publications per year
+#' @param page_language Language of the page, used to format the HTML code.
+print_out_empra_publications <- function(page_language) {
+  empra_publications <-
+    yaml::read_yaml("empra-publications.yaml") |>
+    purrr::map(~process_empra_publication(.)) |>
+    list_rbind() |>
+    mutate(Year = fct_rev(factor(Year))) |>
+    arrange(Year, FirstAuthor) |>
+    group_by(Year) |>
+    group_walk(~format_publications_for_year(.y$Year[1], .x, page_language))
+}
+
+
+#' Format a single conference submission
+#'
+#' @param entry A list with fields "title", "authors", "conference", "volume", "issue", "pages", "doi", "year".
+#'
+#' @returns tibble with columns "Year", "FirstAuthor", "Citation", "Abstract".
+process_empra_conference <- function(entry) {
+  tibble(Year = entry$year,
+         FirstAuthor = entry$authors[[1]]$lastname,
+         Citation = glue('{format_authors_list(entry$authors)} ({entry$year}) "{entry$title}"_{entry$conference}_'),
+         Abstract = entry$abstract)
+}
+
+#' Load, format, and print out conference submissions per year
+#' @param page_language Language of the page, used to format the HTML code.
+print_out_empra_conferences <- function(page_language) {
+  yaml::read_yaml("empra-conferences.yaml") |>
+    purrr::map(~process_empra_conference(.)) |>
+    list_rbind() |>
+    mutate(Year = fct_rev(factor(Year))) |>
+    arrange(Year, FirstAuthor) |>
+    group_by(Year) |>
+    group_walk(~format_publications_for_year(.y$Year[1], .x, page_language))
 }

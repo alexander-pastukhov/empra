@@ -12,6 +12,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: going-further.qmd
+        text: Going Further
 
 format:
   html:

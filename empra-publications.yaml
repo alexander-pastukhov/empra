@@ -1,0 +1,20 @@
+- title: "Switch rates for orthogonally-oriented kinetic-depth displays are correlated across observers"
+  journal: Journal of Vision
+  year: 2019
+  volume: 19
+  issue: 6
+  pages: 1, 1-13
+  authors:
+    - name: Alexander
+      lastname: Pastukhov
+    - name: Philipp
+      lastname: Kastrup
+      empra_student: yes
+    - name: Isabel Friederike
+      lastname: Abs
+      empra_student: yes
+    - name: Christian-Claus
+      lastname: Carbon
+  doi: 10.1167/19.6.1
+  abstract: >
+    When continuously viewing multistable displays, which are compatible with several comparably likely interpretations, perception perpetually switches between available alternatives. Prior studies typically report the lack of consistent individual switch rates across different displays. However, this comparison is based on an assumption that neural representations of physically identical displays are consistent across observers. Yet, given how different individuals are already at the level of the retina, it is likely that the difference in other relevant factors might mask the correlation. To address this issue, we compared switch rates in two kinetic-depth displays (KDE) that rotated around orthogonal axes (458 counterclockwise vs. 458 clockwise relative to the vertical). This ensured that dynamics of multistable perception was based on highly similar, but different and independent neural representations. We also included a Necker cube (NC) display as a control. We report that switch rates were correlated between two kinetic-depth effect displays, but not between either of the KDE and NC displays. This demonstrates that the usual lack of correlation may not be evidence for the lack of a shared pacesetter mechanism of multistable perception, but reflect other factors, such as differently modulated inputs to competing representations. In addition, we asked participants to speed-up or slow-down perceptual alternations and found that only the former ability was correlated across different displays. This indicates that these two types of volitional control may differ in their use of attentional resources.

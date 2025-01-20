@@ -1,0 +1,34 @@
+---
+title: "Weiter gehen"
+lang: de
+---
+
+
+```{r}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+source("submission_utils.R")
+```
+
+Die Idee des EMPRA ist es, Studenten ein realistisches Forschungsprojekt durchführen zu lassen. Und manchmal ist die Qualität der Arbeit so hoch, dass sie die Aufmerksamkeit der Forschungsgemeinschaft verdient. Hier sind EMPRA-Projekte aus den vergangenen Jahren, die in einer begutachteten Zeitschrift oder auf einer internationalen wissenschaftlichen Konferenz veröffentlicht wurden. Nachfolgend sind die studentischen Autoren fett markiert.
+
+## Publikationen in begutachteten Fachzeitschriften
+
+```{r empra-publications-en, results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+print_out_empra_publications(rmarkdown::metadata$lang)
+```
+
+
+## Konferenzbeiträge
+
+```{r empra-conferences-en, results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+print_out_empra_conferences(rmarkdown::metadata$lang)
+```
+

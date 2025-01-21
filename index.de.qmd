@@ -13,7 +13,14 @@ empra_year <- 2025
 submissions <- load_years_submissions(empra_year)
 ```
 
+::: {.grid}
+::: {.g-col-4}
+![](assets/images/logo.png)
+:::
+::: {.g-col-8}
 Das Empiriepraktikum, auch EMPRA genannt, ist ein praxisorientierter Kurs, der sich auf die eigenständige Planung, Durchführung und kritische Analyse empirischer Forschung konzentriert. Die Teilnehmer entwickeln Fähigkeiten in der Formulierung von Forschungsfragen, der Erstellung und Prüfung von Hypothesen, dem Entwurf von Forschungsplänen, der Durchführung empirischer Studien und der Analyse und kritischen Diskussion der Ergebnisse. Das Seminar integriert Projekterfahrungen, um die Fähigkeit der Studierenden zu verbessern, ihre eigenen Forschungsergebnisse effektiv durchzuführen und zu präsentieren.
+:::
+:::
 
 ## EMPRA Conference 2025
 

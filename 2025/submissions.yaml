@@ -186,3 +186,79 @@
   abstract: >
     Die Bereiche Musik und Emotionen sind nahezu untrennbar. Bisherige Forschung beschäftigte sich unter anderem mit dem Zusammenhang zwischen Musiktraining und emotionaler Kompetenz. So konnte festgestellt werden, dass Musiktraining die neuronale Entwicklung und somit die kognitive Leistung beeinflussen kann. Musik kann zudem eine fundamentale Komponente emotionaler Intelligenz bilden und dementsprechend die emotional awareness fördern. Forschungsschwerpunkt war hierbei die auditorische Emotionserkennung, wonach Musiker:innen anhand der Sprachprosodie ausgedrückte Emotionen besser wahrnehmen würden als Nicht-Musiker:innen. Die vorliegende Studie hingegen beschäftigt sich anhand des Berlin Emotion Recognition Test (BERT) mit einem möglichen Zusammenhang zwischen der Akkuratheit der visuellen Emotionserkennung und Musiktraining, das vor dem Alter von neun Jahren begonnen wurde.  Ferner wurde die Aktuelle Stimmungsskala (ASTS) und das Emotional Intelligence Inventar (EI4) eingesetzt. Die Proband*innen wurden in einem between subjects design post-hoc nach dieser Altersgrenze von 9 Jahren zwei Gruppen zugeordnet. In die Analyse flossen Daten von N=34 Personen (Musiktraining vor dem 9. Lebensjahr: n=24; Musiktraining nach dem 9. Lebensjahr oder kein Musiktraining: n=10) ein. Es konnte kein signifikanter Unterschied hinsichtlich der Emotionserkennungsfähigkeiten von Menschen mit oder ohne gezielter institutionalisierter musikalischer Förderung außerhalb des schulischen Unterrichts vor dem Alter von neun Jahren und nach dem Alter von neun Jahren nachgewiesen werden. Auch zeigte sich kein Unterschied hinsichtlich der Subskalen Einfühlungsvermögen, Menschenkenntnis, emotionale Selbstkontrolle sowie Überzeugungskraft des EI4 zwischen beiden Gruppen. Deskriptivstatistisch zeigte sich im Mittel jedoch eine höhere Akkuratheit im BERT bei der Gruppe mit Musiktraining vor dem neunten Lebensjahr. Limitationen zeigen sich demnach in der geringen Stichprobengröße. Zukünftig sollte diese Studie an einer größeren Personengruppe sowie mit angepassten Fragen zur Erfassung der musikalischen Ausbildung durchgeführt werden.
   keywords: [EMOTIONSERKENNUNG, MUSIK, MUSIKTRAINING, EMOTIONALE INTELLIGENZ, BERLIN EMOTION RECOGNITION TEST]
+
+
+- title: Die Auswirkungen von Darstellung und Erklärung des Nutriscores auf die Produktauswahl
+  type: poster
+  authors:
+  - name: Omar
+    lastname: Doar
+  - name: Nicolas
+    lastname: Heil
+  - name: Luisa
+    lastname: Zirpel
+  supervisor: Prof. Dr. Philipp Sprengholz
+  content: Doar-Heil-Zirpel.pdf
+
+- title: Effekte von Nährwertangaben in der Werbung auf die wahrgenommene Gesundheit von Produkten und die Kaufabsicht
+  authors:
+  - name: Valeska
+    lastname: Biella
+  - name: Maria
+    lastname: Erven
+  - name: Mia Charlotte
+    lastname: Strobach
+  supervisor: Prof. Dr. Philipp Sprengholz
+  content: Biella-Erven-Strobach.pdf
+
+- title: The influence of Nutri-Score and pricing on purchasing decisions
+  authors:
+  - name: Antonia
+    lastname: Sahler
+  - name: Anna Tabea
+    lastname: Feifel
+  - name: Babett
+    lastname: Reich
+  supervisor: Prof. Dr. Philipp Sprengholz
+  content: Sahler-Feifel-Reich.pdf
+
+- title: "Go Healthy! Der Einfluss des Nutri-Scores auf Kaufentscheidungen"
+  authors:
+  - name: Jakob
+    lastname: von Oheimb
+  - name: Maja
+    lastname: Grobelnik
+  - name: Rosa
+    lastname: Franck
+  supervisor: Prof. Dr. Philipp Sprengholz
+  content: von-Oheimb-Grobelnik-Franck.pdf
+
+- title: "Touch and Feel: Exploring Interpersonal Touch and Its Influence on Material Pleasantness"
+  authors:
+  - name: Nina
+    lastname: Leimbach
+  - name: Hanna
+    lastname: Straub
+  - name: Sarah
+    lastname: Wittstock
+  - name: Nuria
+    lastname: Romer
+  - name: Helen
+    lastname: Kaps
+  - name: Jana
+    lastname: Wucherer
+  supervisor: Marella Campagna
+  content: Leimbach-Straub-Wittstock-Romer-Kaps-Wucherer.pdf
+
+- title: "What kind of textures are liked or disliked by people on the autism spectrum? A qualitative study"
+  authors:
+  - name: "S."
+    lastname: Brinkers
+  - name: "L."
+    lastname: Kohler
+  - name: "L."
+    lastname: Paul
+  - name: "E."
+    lastname: Tollmien
+  supervisor: Marella Campagna
+  content: Brinkers-Kohler-Paul-Tollmien.pdf

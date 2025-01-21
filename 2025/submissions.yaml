@@ -200,7 +200,7 @@
   - name: Luisa
     lastname: Zirpel
   supervisor: Prof. Dr. Philipp Sprengholz
-  content: Doar-Heil-Zirpel.pdf
+  # content: Doar-Heil-Zirpel.pdf
 
 - title: Effekte von Nährwertangaben in der Werbung auf die wahrgenommene Gesundheit von Produkten und die Kaufabsicht
   type: poster
@@ -212,7 +212,7 @@
   - name: Mia Charlotte
     lastname: Strobach
   supervisor: Prof. Dr. Philipp Sprengholz
-  content: Biella-Erven-Strobach.pdf
+  # content: Biella-Erven-Strobach.pdf
 
 - title: The influence of Nutri-Score and pricing on purchasing decisions
   type: poster
@@ -224,7 +224,7 @@
   - name: Babett
     lastname: Reich
   supervisor: Prof. Dr. Philipp Sprengholz
-  content: Sahler-Feifel-Reich.pdf
+  # content: Sahler-Feifel-Reich.pdf
 
 - title: "Go Healthy! Der Einfluss des Nutri-Scores auf Kaufentscheidungen"
   type: poster
@@ -236,7 +236,7 @@
   - name: Rosa
     lastname: Franck
   supervisor: Prof. Dr. Philipp Sprengholz
-  content: von-Oheimb-Grobelnik-Franck.pdf
+  # content: von-Oheimb-Grobelnik-Franck.pdf
 
 - title: "Touch and Feel: Exploring Interpersonal Touch and Its Influence on Material Pleasantness"
   type: poster

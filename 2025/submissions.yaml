@@ -148,3 +148,41 @@
   abstract: >
     The ability of stand-up comedians to entertain audiences with offensive humor highlights the delicate balance between humor and ethical boundaries. One reason for this may be context effect: when attending comedy shows people expect to laugh and they are willing to overlook social or cultural inappropriateness. This study examines the effect of context on the evaluation of ethically controversial jokes. We predict that jokes deemed offensive will be more acceptable when framed within a comedy setting compared to a public speaking scenario. We hypothesize that the "comedian" label influences how audiences evaluate the relatability, funniness, likability, and ethical implications of such jokes. Participants will be randomly divided into two groups: comedy and non-comedy. Participants in the comedy group will be informed that the jokes originated from stand-up comedians, while the non-comedy group will receive a cover story suggesting the content was from public speeches (e.g., TED Talks). Our analysis focuses on whether audience expectations—set by the comedian label—alter the perception of jokes, particularly regarding their ethical acceptability. Limitations include the reliance on text-based jokes, potential cultural biases, and no formal pre-study for stimuli selection. The study emphasizes the complexity of navigating the interplay between humor and ethical boundaries in diverse social contexts.
   keywords: [Offensive humor, Ethical boundaries, Context effect, Comedy setting, Ethical acceptability, Relatability, Funniness, Likability, Humor, Stand-up comedy]
+
+
+- title: Einfluss von Musik auf die Daueraufmerksamkeit
+  type: poster
+  authors:
+  - name: Karolina
+    lastname: Gierschik
+  - name: Amelie
+    lastname: Spörer
+  - name: Selina
+    lastname: Schneider
+  - name: Benjamin
+    lastname: Rückerl
+  - name: Sophia
+    lastname: Lindner
+  supervisor: Vivien Vorndran
+  abstract: >
+    Musik kann die Aufmerksamkeitsleistung maßgeblich beeinflussen. Die bisherige Forschung liefert diesbezüglich jedoch heterogene Ergebnisse. In einigen Studien führte individuell ausgewählte Musik zu einer verbesserten Konzentrationsleistung. Andere Studien zeigten wiederum, dass Musik die kognitive Belastung erhöhen kann und somit die Leistung verschlechtern kann. In der vorliegenden Studie wird daher untersucht, ob und inwieweit das Hören von Musik die Aufmerksamkeitsleistung (Reaktionsgeschwindigkeit, Fehler) bei der Bearbeitung einer Daueraufmerksamkeitsaufgabe beeinflusst. Eine Stichprobe von N=42 Studierenden (EG1: n= 12; EG2: n=15; KG: n=15) bearbeitete eine Aufmerksamkeitsaufgabe zur Erhebung der Daueraufmerksamkeit (TAP Daueraufmerksamkeit, Untertest der Testbatterie zur Aufmerksamkeitsprüfung), während sie entweder vorgegebene klassische Musik, selbstgewählte Lieblingsmusik oder keine Musik hörten. Hierfür wurde zunächst eine Baseline erhoben. Im zweiten Durchgang hörten die Teilnehmenden während der Bearbeitung entweder Musik (Klassik oder Lieblingsmusik) oder sie hörten keine Musik. Zudem wurden Fragebögen zur Aufmerksamkeitskontrolle (ACS) sowie allgemeine Informationen zum Musikhören und zur aktuellen Stimmung (ASTS) eingesetzt.
+    Entgegen der Hypothesen unterschieden sich die drei Gruppen nicht signifikant voneinander. Die zwei Experimentalgruppen (Lieblingsmusik und klassische Musik) zeigten zwar im Mittel schnellere Reaktionszeiten und weniger Fehler in ihrem zweiten Durchlauf, inferenzstatistisch konnte jedoch kein Effekt zwischen dem Hören von Musik und der Daueraufmerksamkeitsleistung festgestellt werden. Stattdessen scheinen die beobachteten Verbesserungen eher auf den Hauptfaktor Zeit im Sinne von Übung oder die Gewöhnung an die Aufgabenstruktur zurückzuführen zu sein. Um einer möglichen Gewöhnung oder Übungseffekten entgegenzuwirken, erscheint es bei weiteren Studien sinnvoll, zwei unterschiedliche Aufmerksamkeitstests zu verwenden, um unter einem angepassten Forschungsdesign erneut den Einfluss von Musik auf die Daueraufmerksamkeitsleistung zu überprüfen.
+  keywords: [Aufmerksamkeit, Musik, Konzentration]
+
+- title: Einfluss von Musiktrainingseffekten auf die Emotionserkennung
+  type: poster
+  authors:
+  - name: Isabel
+    lastname: Hofmann
+  - name: Elli
+    lastname: Keller
+  - name: Alicia
+    lastname: Krause
+  - name: Alex
+    lastname: Langseder
+  - name: Paula
+    lastname: Schmidt
+  supervisor: Vivien Vorndran
+  abstract: >
+    Die Bereiche Musik und Emotionen sind nahezu untrennbar. Bisherige Forschung beschäftigte sich unter anderem mit dem Zusammenhang zwischen Musiktraining und emotionaler Kompetenz. So konnte festgestellt werden, dass Musiktraining die neuronale Entwicklung und somit die kognitive Leistung beeinflussen kann. Musik kann zudem eine fundamentale Komponente emotionaler Intelligenz bilden und dementsprechend die emotional awareness fördern. Forschungsschwerpunkt war hierbei die auditorische Emotionserkennung, wonach Musiker:innen anhand der Sprachprosodie ausgedrückte Emotionen besser wahrnehmen würden als Nicht-Musiker:innen. Die vorliegende Studie hingegen beschäftigt sich anhand des Berlin Emotion Recognition Test (BERT) mit einem möglichen Zusammenhang zwischen der Akkuratheit der visuellen Emotionserkennung und Musiktraining, das vor dem Alter von neun Jahren begonnen wurde.  Ferner wurde die Aktuelle Stimmungsskala (ASTS) und das Emotional Intelligence Inventar (EI4) eingesetzt. Die Proband*innen wurden in einem between subjects design post-hoc nach dieser Altersgrenze von 9 Jahren zwei Gruppen zugeordnet. In die Analyse flossen Daten von N=34 Personen (Musiktraining vor dem 9. Lebensjahr: n=24; Musiktraining nach dem 9. Lebensjahr oder kein Musiktraining: n=10) ein. Es konnte kein signifikanter Unterschied hinsichtlich der Emotionserkennungsfähigkeiten von Menschen mit oder ohne gezielter institutionalisierter musikalischer Förderung außerhalb des schulischen Unterrichts vor dem Alter von neun Jahren und nach dem Alter von neun Jahren nachgewiesen werden. Auch zeigte sich kein Unterschied hinsichtlich der Subskalen Einfühlungsvermögen, Menschenkenntnis, emotionale Selbstkontrolle sowie Überzeugungskraft des EI4 zwischen beiden Gruppen. Deskriptivstatistisch zeigte sich im Mittel jedoch eine höhere Akkuratheit im BERT bei der Gruppe mit Musiktraining vor dem neunten Lebensjahr. Limitationen zeigen sich demnach in der geringen Stichprobengröße. Zukünftig sollte diese Studie an einer größeren Personengruppe sowie mit angepassten Fragen zur Erfassung der musikalischen Ausbildung durchgeführt werden.
+  keywords: [EMOTIONSERKENNUNG, MUSIK, MUSIKTRAINING, EMOTIONALE INTELLIGENZ, BERLIN EMOTION RECOGNITION TEST]

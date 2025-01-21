@@ -201,6 +201,7 @@
   content: Doar-Heil-Zirpel.pdf
 
 - title: Effekte von Nährwertangaben in der Werbung auf die wahrgenommene Gesundheit von Produkten und die Kaufabsicht
+  type: poster
   authors:
   - name: Valeska
     lastname: Biella
@@ -212,6 +213,7 @@
   content: Biella-Erven-Strobach.pdf
 
 - title: The influence of Nutri-Score and pricing on purchasing decisions
+  type: poster
   authors:
   - name: Antonia
     lastname: Sahler
@@ -223,6 +225,7 @@
   content: Sahler-Feifel-Reich.pdf
 
 - title: "Go Healthy! Der Einfluss des Nutri-Scores auf Kaufentscheidungen"
+  type: poster
   authors:
   - name: Jakob
     lastname: von Oheimb
@@ -234,6 +237,7 @@
   content: von-Oheimb-Grobelnik-Franck.pdf
 
 - title: "Touch and Feel: Exploring Interpersonal Touch and Its Influence on Material Pleasantness"
+  type: poster
   authors:
   - name: Nina
     lastname: Leimbach
@@ -251,6 +255,7 @@
   content: Leimbach-Straub-Wittstock-Romer-Kaps-Wucherer.pdf
 
 - title: "What kind of textures are liked or disliked by people on the autism spectrum? A qualitative study"
+  type: poster
   authors:
   - name: "S."
     lastname: Brinkers

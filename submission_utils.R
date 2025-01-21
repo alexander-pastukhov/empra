@@ -93,8 +93,8 @@ submission_html <- function(entry, page_language) {
   cat('::: {.grid}\n')
     cat('::: {.g-col-10}\n')
       cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
-      cat("<details><summary>", translations[['Abstract']][page_language], "</summary>", entry$Abstract, "</details>\n")
-    cat(':::\n')
+      if (!is.na(entry$Abstract)) cat("<details><summary>", translations[['Abstract']][page_language], "</summary>", entry$Abstract, "</details>")
+    cat('\n:::\n')
 
     cat('::: {.g-col-2}\n')
       if (!is.na(entry$Content)) {

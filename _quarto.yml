@@ -8,7 +8,7 @@ website:
   favicon: assets/images/logo-square.png
   site-url: https://alexander-pastukhov.github.io/empra
   navbar:
-    logo: assets/images/logo-small.png
+    logo: assets/images/logo-small.svg
     left:
       - href: index.qmd
         text: Home

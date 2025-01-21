@@ -106,15 +106,44 @@ submission_html <- function(entry, page_language) {
   cat(':::\n')
 }
 
+
+escape_latex <- function(text) {
+  text <- gsub("&", "\\\\&", text)           # Escape '&'
+  text <- gsub("%", "\\\\%", text)           # Escape '%'
+  text <- gsub("\\$", "\\\\$", text)         # Escape '$'
+  text <- gsub("#", "\\\\#", text)           # Escape '#'
+  text <- gsub("_", "\\\\_", text)           # Escape '_'
+  text <- gsub("\\{", "\\\\{", text)         # Escape '{'
+  text <- gsub("\\}", "\\\\}", text)         # Escape '}'
+  text <- gsub("~", "\\\\textasciitilde{}", text)  # Escape '~'
+  text <- gsub("\\^", "\\\\textasciicircum{}", text)  # Escape '^'
+  text
+}
+
+submission_pdf <- function(entry, page_language) {
+  cat("\\noindent\n")  # Prevent indentation at the start
+  cat("\\begin{minipage}{\\textwidth}\n")
+  cat("\\begin{center}\n")
+  cat("\\textbf{", escape_latex(entry$Title), "}\\\\\n", escape_latex(entry$Authors), "\\\\\n", sep="")
+  cat("Supervisor: ", entry$Supervisor, "\\\\\n", sep="")
+  cat("\\end{center}\n")
+  cat("\\end{minipage}\n")  # End grouping for header lines
+  if (!is.na(entry$Abstract)) {
+    cat("\\noindent\n")  # Prevent indentation for the abstract
+    cat(entry$Abstract, "\n\n")
+  }
+  cat("\\vspace{1cm}\n")
+}
+
 #' List all submission of a given type
 #'
 #' @param submissions A tibble with columns "Title", "Authors", "Supervisor", "Abstract", "Content", "Type", "Year".
 #' @param submission_type String, either "poster" or "talk"
 #' @param page_language Language of the page, used to format the HTML code.
-list_submissions <- function(submissions, submission_type, page_language) {
+list_submissions <- function(submissions, submission_type, page_language, format_function=submission_html) {
   submissions |>
     filter(Type == submission_type) |>
-    slider::slide(~submission_html(., page_language)) ->
+    slider::slide(~format_function(., page_language)) ->
     hide_return_values
 }
 

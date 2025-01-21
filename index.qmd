@@ -4,7 +4,7 @@ lang: en
 ---
 ::: {.grid}
 ::: {.g-col-4}
-![](assets/images/logo.png)
+![](assets/images/logo.svg)
 :::
 ::: {.g-col-8}
 The Empiriepraktikum seminar, a.k.a. EMPRA, is a practical course focused on the independent planning, implementation, and critical analysis of empirical research. Participants develop skills in formulating research questions, creating and testing hypotheses, designing research plans, conducting empirical studies, and analyzing and critically discussing the results. The seminar integrates project experiences to enhance the students' ability to conduct and present their own research findings effectively.

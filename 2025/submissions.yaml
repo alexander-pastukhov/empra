@@ -6,6 +6,7 @@
   supervisor: Pastukhov, Alexander
   type: poster
   content: Kollmitz-Schnorbach-Geiger.pdf
+  osf: z4jsm
   abstract: >
     Was eine beobachtende Person von einem bestimmten Standpunkt in einem Spiegel sieht, ist für Außenstehende schwer nachvollziehbar. Diese Studie untersucht, ob es Menschen schwerer fällt einen Zielreiz über das Spiegelbild eines Gesichts zu identifizieren, im Vergleich zu dem direkten Abbild. Zusätzlich zur Perspektive wurden Ausrichtung (Inversion) und Cue-Validität als unabhängige Variablen betrachtet. Dafür haben wir ein computerbasiertes Experiment im Labor durchgeführt. Den zwölf Versuchspersonen (VPn, drei männlich, neun weiblich) wurde auf dem Bildschirm ein Hinweisreiz präsentiert. Einmal sahen sie sein direktes Abbild („direct”), dann sein Spiegelbild („mirror”). Zusätzlich wurde der Cue aufrecht („Upright”) oder umgedreht („invertiert”) gezeigt. Schließlich lautete die Aufgabe, die Ausrichtung der Streifen eines Zielreizes, der daraufhin an einer von acht Stellen erschien, durch Drücken der Pfeiltaste (rechts oder links) anzugeben. Hierbei wurde die Cue-Validität („Pro” (100%), „Anti” (0%) und „Random”) variiert. Die abhängigen Variablen waren Reaktionszeit in Millisekunden und die Anzahl korrekter Antworten. Zur Analyse der erhobenen Daten haben wir ein General Linear Model angewandt. Unsere Ergebnisse haben unsere erste Hypothese für den aufrecht orientierten Reiz bestätigt: Die VPn antworteten für die direkte Bedingung schneller und besser (mehr richtige Antworten) als für „mirror”. Außerdem hatten sie für „Pro” die geringste Reaktionszeit und wenigsten falschen Antworten, gefolgt von der Bedingung „Random”. Bei „Anti” waren die Teilnehmenden, wider unserer Erwartungen am langsamsten und schnitten am schlechtesten ab. Für den invertierten Cue konnte dies nicht gezeigt werden, was bestätigt, dass die Inversion die Aufgabe zusätlich erschwert. Zusammenfassend hat unsere Untersuchung gezeigt, dass der menschliche Blick automatisch ist und einem Hinweisreiz folgt.
 
@@ -28,6 +29,7 @@
     - Graumann, Peer
   supervisor: Pastukhov, Alexander
   content: Markert-Haas-Graumann.pdf
+  osf: 4wjqe
   abstract: >
     Die vorliegende Studie untersucht, wie vergangene visuelle Reize (serielle Abhängigkeit) aktuelle Wahrnehmungsentscheidungen beeinflussen und inwiefern diese Effekte mit der Meta-Wahrnehmung interagieren.
     Dazu führten die Teilnehmer eine visuelle Entscheidungsaufgabe durch. Diese bestand darin, dass den Teilnehmern 5 bis 8 Stimuli (Gabor-Patches) mit unterschiedlichen Kontraststufen und Orientierungen für 1ms präsentiert wurden. Anschließend musste die Orientierung des Teststimulus (der vor der Entscheidungsaufgabe präsentierte Stimulus, der stets den gleichen Kontrast aufwies und sich nur in seiner Orientierung unterschied), eingeschätzt werden.

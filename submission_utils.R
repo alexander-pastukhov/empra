@@ -71,6 +71,7 @@ entry_to_tibble <- function(yaml_entry, empra_year) {
          Abstract = yaml_entry$abstract,
          Content = ifelse(is.null(yaml_entry$content), NA, yaml_entry$content),
          Number = ifelse(is.null(yaml_entry$number), NA, yaml_entry$number),
+         OSF = ifelse(is.null(yaml_entry$osf), NA, yaml_entry$osf),
          Type = yaml_entry$type,
          Year = empra_year)
 }
@@ -107,12 +108,17 @@ submission_html <- function(entry, page_language) {
       if (!is.na(entry$Abstract)) cat("<details><summary>", translations[['Abstract']][page_language], "</summary>", entry$Abstract, "</details>")
     cat('\n:::\n')
 
-    cat('::: {.g-col-2}\n')
+    cat('::: {.g-col-1}\n')
       if (!is.na(entry$Content)) {
         cat('<a href="', entry$Year, "/", entry$Content, '" target="_blank">',
             sprintf('<img src="assets/icons/%s.svg" alt="Poster" style="width:30px;"/>', entry$Type),
             '</a>\n', sep="")
       }
+    cat(':::\n')
+    cat('::: {.g-col-1}\n')
+    if (!is.na(entry$OSF)) {
+      cat('<a href="https://osf.io/', entry$OSF, '" target="_blank"> <img src="assets/icons/osf.svg" alt="Poster" style="width:30px;"/></a>\n', sep="")
+    }
     cat(':::\n')
   cat(':::\n')
 }

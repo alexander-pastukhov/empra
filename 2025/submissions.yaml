@@ -1,40 +1,32 @@
 - title: "Spiegel, Spiegel in der Hand: Die Problematik der Interpretation von Spiegelbildern"
   authors:
-    - name: Désirée
-      lastname: Kollmitz
-    - name: Clara
-      lastname: Schnorbach
-    - name: Benedikt
-      lastname: Geiger
-  supervisor: Alexander Pastukhov
+    - Kollmitz, Désirée
+    - Schnorbach, Clara
+    - Geiger, Benedikt
+  supervisor: Pastukhov, Alexander
   type: poster
   content: Kollmitz-Schnorbach-Geiger.pdf
   abstract: >
     Was eine beobachtende Person von einem bestimmten Standpunkt in einem Spiegel sieht, ist für Außenstehende schwer nachvollziehbar. Diese Studie untersucht, ob es Menschen schwerer fällt einen Zielreiz über das Spiegelbild eines Gesichts zu identifizieren, im Vergleich zu dem direkten Abbild. Zusätzlich zur Perspektive wurden Ausrichtung (Inversion) und Cue-Validität als unabhängige Variablen betrachtet. Dafür haben wir ein computerbasiertes Experiment im Labor durchgeführt. Den zwölf Versuchspersonen (VPn, drei männlich, neun weiblich) wurde auf dem Bildschirm ein Hinweisreiz präsentiert. Einmal sahen sie sein direktes Abbild („direct”), dann sein Spiegelbild („mirror”). Zusätzlich wurde der Cue aufrecht („Upright”) oder umgedreht („invertiert”) gezeigt. Schließlich lautete die Aufgabe, die Ausrichtung der Streifen eines Zielreizes, der daraufhin an einer von acht Stellen erschien, durch Drücken der Pfeiltaste (rechts oder links) anzugeben. Hierbei wurde die Cue-Validität („Pro” (100%), „Anti” (0%) und „Random”) variiert. Die abhängigen Variablen waren Reaktionszeit in Millisekunden und die Anzahl korrekter Antworten. Zur Analyse der erhobenen Daten haben wir ein General Linear Model angewandt. Unsere Ergebnisse haben unsere erste Hypothese für den aufrecht orientierten Reiz bestätigt: Die VPn antworteten für die direkte Bedingung schneller und besser (mehr richtige Antworten) als für „mirror”. Außerdem hatten sie für „Pro” die geringste Reaktionszeit und wenigsten falschen Antworten, gefolgt von der Bedingung „Random”. Bei „Anti” waren die Teilnehmenden, wider unserer Erwartungen am langsamsten und schnitten am schlechtesten ab. Für den invertierten Cue konnte dies nicht gezeigt werden, was bestätigt, dass die Inversion die Aufgabe zusätlich erschwert. Zusammenfassend hat unsere Untersuchung gezeigt, dass der menschliche Blick automatisch ist und einem Hinweisreiz folgt.
 
 - title: "Perception of Sustainable Denim Jeans Design"
-  authors:
-    - name: Lotta
-      lastname: Straube
-    - name: Lisa Alexandra
-      lastname: Gromer
-    - name: Anna
-      lastname: Heuschkel
-  supervisor: Alexander Pastukhov
   type: talk
+  number: T3
+  authors:
+    - Straube, Lotta
+    - Gromer, Lisa Alexandra
+    - Heuschkel, Anna
+  supervisor: Pastukhov, Alexander
   abstract: >
     While there is abundant research about marketing communication, we set out to understand whether consumers can recognize circularity-optimized products without marketing messages and if their ability to do so can be impacted through educational intervention. Participants qualitatively described ten pairs of jeans which included conventional and circularity-optimized denims. The quantitative analysis consisted of an initial rating (T1) of the jeans in six categories (timelessness, sustainability, recyclability, complexity in production, price, and quality) by placing them physically on a grid scale using ArUco markers to digitally track their position. After an intervention, providing additional information about product recyclability, the sorting was repeated (T2). The qualitative data was processed through a semantic similarity analysis, whereas the quantitative data was used for correlation analysis between categories as well as creating bespoke placement profiles of each denim and category pre and post intervention. We concluded that participants did not recognize circularity-optimized design on their own, this also did not change through the education intervention. However, education was shown to make the circularity-hindering features of conventional products more obvious. Participants generally rated uni-colored products more sustainable, indicating a wrong heuristic in judging sustainability of product design. Overall it can be concluded that the physical product on its own does not suffice to communicate more responsible design to consumers, instead dedicated communication material should be empirically tested.
 
 - title: "Meta-Wahrnehmung trifft serielle Abhängigkeit: Wie vergangene Reize die aktuelle visuelle Entscheidung formen"
-  authors:
-    - name: Antonia
-      lastname: Markert
-    - name: Sandra
-      lastname: Haas
-    - name: Peer
-      lastname: Graumann
-  supervisor: Alexander Pastukhov
   type: poster
+  authors:
+    - Markert, Antonia
+    - Haas, Sandra
+    - Graumann, Peer
+  supervisor: Pastukhov, Alexander
   content: Markert-Haas-Graumann.pdf
   abstract: >
     Die vorliegende Studie untersucht, wie vergangene visuelle Reize (serielle Abhängigkeit) aktuelle Wahrnehmungsentscheidungen beeinflussen und inwiefern diese Effekte mit der Meta-Wahrnehmung interagieren.
@@ -46,15 +38,11 @@
 - title: "VIDEO VS. „WIRKLICHKEIT“ Wahrnehmung von Zaubertricks unter verschiedenen Bedingungen"
   type: poster
   authors:
-    - name: Emilia
-      lastname: Dahmen
-    - name: Finnegan
-      lastname: Hardt
-    - name: Simon
-      lastname: Panetta
-    - name: Lea
-      lastname: Rüdel
-  supervisor: Jakob Roetner
+    - Dahmen, Emilia
+    - Hardt, Finnegan
+    - Panetta, Simon
+    - Rüdel, Lea
+  supervisor: Roetner, Jakob
   content: Dahmen-Hardt-Panetta-Ruedel.pdf
   abstract: >
     Zahlreiche Studien zu Zaubertricks verwenden Videos als Präsentationsform. Der Forschungsstand zum Vergleich mit Live-Präsentationen ist nicht besonders ausgeprägt, impliziert aber mögliche Unterschiede. Diese Studie zielte darauf ab, zu messen, ob es einen signifikanten Unterschied in der Wahrnehmung eines Zaubertricks zwischen einer Video- und einer "in-persona"-Bedingung gab. Es wurde untersucht, ob die beiden Darbietungsformen zu Unterschieden in der Wahrnehmung und dem Erleben des Tricks führten. Literaturbasiert wurde angenommen, dass live sowohl ein höheres enjoyment entsteht, der Trick als glaubwürdiger sowie leichter erklärbar empfunden wird. Die Studie umfasste eine Stichprobe von n = 44 randomisiert den Bedingungen zugeteilten Teilnehmenden. Es wurde untersucht, welchen Einfluss die Darbietungsform (Videoaufnahme vs. „in-persona“) eines Zaubertricks auf Enjoyment, Glaubwürdigkeit und das Verständnis der Funktionsweise des Tricks hat. Die Daten wurden im Labor sowie durch einen Online-Fragebogen erhoben. Mit Blick auf die Ergebnisse ist festzustellen, dass sich keine der drei Hypothesen bestätigen ließ (Enjoyment: p = .072, d = -0.449; Erklärungen: p = .741, φ = 0.05; Glaubwürdigkeit: p = .091, d = -0.410). Enjoyment und Glaubwürdigkeit zeigten allerdings beide mittlere Effekte. Zusätzlich wurden die angegebenen Erklärungen der Versuchspersonen ausgewertet.
@@ -63,18 +51,14 @@
 
 - title: "Magie & Psychologie – der Einfluss von Geschichte auf das Erleben von Zaubertricks"
   type: talk
+  number: T1
   authors:
-    - name: Rico Raphael
-      lastname: Jahn
-    - name: Justus Levin
-      lastname: Scheffer
-    - name: Theresa
-      lastname: Erdmann
-    - name: Lilly Johanna
-      lastname: Schaeffler
-    - name: Ella Lisa
-      lastname: Alt
-  supervisor: Jakob Roetner
+    - Jahn, Rico Raphael
+    - Scheffer, Justus Levin
+    - Erdmann, Theresa
+    - Schaeffler, Lilly Johanna
+    - Alt, Ella Lisa
+  supervisor: Roetner, Jakob
   abstract: >
     Magie fasziniert Menschen seit Jahrhunderten, doch erst in den letzten Jahren wurde sie als Gegenstand psychologischer Untersuchungen betrachtet. Die Frage, wie Zauberei das emotionale Erleben beeinflusst, bietet Ansatzpunkte für die Erforschung kognitiver/affektiver Prozesse. Zaubertricks sind oft in Geschichten eingebettet, Forschung hierzu fehlt jedoch bisher. Ziel dieser Studie war es, die Wirkung des Geschichtenerzählens während eines Zaubertricks auf die Affektivität der Zuschauenden zu untersuchen. In einem (randomisiert zugeordneten) 2x2 between-subjects-Design wurden die Faktoren: (1) Vorhandensein Geschichte (mit vs. ohne) und (2) Rolle der Teilnehmenden (aktiv vs. passiv) variiert. Die positive und negative Affektivität (PANAS) die Selbstwirksamkeit (ASKU) wurden als outcome erfasst. Die Erwartung war, dass das Erzählen einer Geschichte die positive Affektivität steigert und die negative Affektivität reduziert. Zudem wurde angenommen, dass dieser Effekt durch eine aktive Rolle in der Geschichte verstärkt wird. Die Auswertung ergab, dass die Präsentation eines Zaubertricks die positive Affektivität unabhängig von der Bedingung steigerte (p < .001, 𝜂2 = 0.140). Die aktive Rolle moderierte in der Geschichts-Bedingung diesen Effekt (p = .020, 𝜂2 = 0.013). Die negative Affektivität wurde nicht beeinflusst. Die gewonnenen Erkenntnisse über den positiven Einfluss einer Zauberperformance liefern wichtige Ansatzpunkte für zukünftige Forschung (bspw. Storytelling, therapeutische Kontexte, etc.).
   keywords: [Magie, Zauberkunst, Storytelling, (positive/negative) Affektivität, Emotionen]
@@ -82,15 +66,11 @@
 - title: "Magie und Kognition – eine Forschung zu haptischen Illusionen"
   type: poster
   authors:
-    - lastname: Hinkel
-      name: Veronika
-    - lastname: Saar
-      name: Franca
-    - lastname: Koch
-      name: Helena N.
-    - lastname: Kirfel
-      name: A.Roxane
-  supervisor: Jakob Roetner
+    - Hinkel, Veronika
+    - Saar, Franca
+    - Koch, Helena N.
+    - Kirfel, A.Roxane
+  supervisor: Roetner, Jakob
   content: Hinkel-Saar-Koch-Kirfel.pdf
   abstract: >
     Zaubertricks faszinieren seit Langem, jedoch gibt es kaum Forschung zu deren ästhetischen/affektiven Wahrnehmungen. Diese Studie untersuchte die Einflüsse von Ambiguitätstoleranz (AT) und Locus of Control (LoC) auf den Affekt, sowie ästhetische Wahrnehmungen eines haptischen Zaubertricks. Hypothesen: (1) positiver Einfluss der AT und der internalen Kontrollüberzeugungen auf die ästhetische Wahrnehmung; (2) positiver Einfluss dieser Variablen auf den Affekt der Versuchspersonen.
@@ -101,17 +81,12 @@
 - title: "Judging a book by its cover: Perception of clothing styles and inferences on personality traits and likeability"
   type: poster
   authors:
-    - name: Inge
-      lastname: Strunz
-    - name: Nadina
-      lastname: Jörg
-    - name: Sophie
-      lastname: Nolte
-    - name: Lotta
-      lastname: Linden
-    - name: Alexandra
-      lastname: Kaltner
-  supervisor: Itay Goetz
+    - Strunz, Inge
+    - Jörg, Nadina
+    - Nolte, Sophie
+    - Linden, Lotta
+    - Kaltner, Alexandra
+  supervisor: Goetz, Itay
   content: Strunz-Joerg-Nolte-Linden-Kaltner.pdf
   abstract: >
     Fashion styles vary greatly across different cultures and throughout history. While it is widely accepted that clothing impacts first impressions, there is limited empirical evidence linking specific clothing styles to inferred personality traits. This exploratory study aims to determine whether participants rate the clothing style categories of “alternative,” “sporty,” “casual,” “elegant,” and “gothic” as significantly different from one another. These styles were illustrated using AI-generated images of men and women standing in front of a lecture hall. We measured various aspects of assumed personality using a short version of the Big Five Inventory, along with scales for creativity and trustworthiness. The use of repeated measures ANOVA revealed unique patterns of inferences for each style, confirming the importance of clothing in shaping first impressions. AI models with a "gothic style" were rated higher in neuroticism but notably lower in extraversion. The casual and elegant styles received the highest ratings for conscientiousness, while the sporty style was rated lowest in openness to experience and creativity. Overall, these findings suggest that, in the absence of other information, clothing style plays a major role in how we perceive others and the characteristics we attribute to them.
@@ -120,18 +95,13 @@
 - title: "The influence of knowing the artist’s gender on how we perceive art aesthetically"
   type: poster
   authors:
-    - name: Maike
-      lastname: Beckers
-    - name: Vanessa
-      lastname: Kaiser
-    - name: Lara
-      lastname: Zlotos
-    - name: Rafael
-      lastname: Sünkel
-    - name: Vincent
-      lastname: Brandes
+    - Beckers, Maike
+    - Kaiser, Vanessa
+    - Zlotos, Lara
+    - Sünkel, Rafael
+    - Brandes, Vincent
+  supervisor: Goetz, Itay
   content: Beckers-Kaiser-Zlotos-Suenkel-Brandes.pdf
-  supervisor: Itay Goetz
   abstract: >
     Throughout art history, art institutions, academies, and society at large have disadvantaged female artists. Contemporary Art institutions finally grant female artists more equal opportunities to male artists; nevertheless, it is unknown whether beholders evaluate artworks differently depending on the artist's gender. To explore this question, 75 participants rated ten black and white photographs: five created by female artist and five by a male artist. Participants completed the Art Reception Survey for each photograph. In a between-subjects design, participants were randomly assigned into one of three groups: one group read a cover story according to which the artworks were created by a female artist, one groups read a cover story according to which the artworks were created by a male artist, and a control group that received no cover story or information about the artist. One-way ANOVA revealed no significant differences in ratings between any of the groups. We conclude that despite centuries of inequality, knowledge of an artist's gender does not seem to influence the aesthetic appreciation of photographs.
   keywords: [Gender, Aesthetic Appreciation, Art History, Inequality, Context, Female artists, photography]
@@ -139,11 +109,9 @@
 - title: "Does the artist label affect how people appreciate morally ambiguous Art? Effect regarding standup comedy"
   type: poster
   authors:
-    - name: Esma
-      lastname: Benikdes
-    - name: Fangyi
-      lastname: Shen
-  supervisor: Itay Goetz
+    - Benikdes, Esma
+    - Shen, Fangyi
+  supervisor: Goetz, Itay
   content: Benikdes-Shen.pdf
   abstract: >
     The ability of stand-up comedians to entertain audiences with offensive humor highlights the delicate balance between humor and ethical boundaries. One reason for this may be context effect: when attending comedy shows people expect to laugh and they are willing to overlook social or cultural inappropriateness. This study examines the effect of context on the evaluation of ethically controversial jokes. We predict that jokes deemed offensive will be more acceptable when framed within a comedy setting compared to a public speaking scenario. We hypothesize that the "comedian" label influences how audiences evaluate the relatability, funniness, likability, and ethical implications of such jokes. Participants will be randomly divided into two groups: comedy and non-comedy. Participants in the comedy group will be informed that the jokes originated from stand-up comedians, while the non-comedy group will receive a cover story suggesting the content was from public speeches (e.g., TED Talks). Our analysis focuses on whether audience expectations—set by the comedian label—alter the perception of jokes, particularly regarding their ethical acceptability. Limitations include the reliance on text-based jokes, potential cultural biases, and no formal pre-study for stimuli selection. The study emphasizes the complexity of navigating the interplay between humor and ethical boundaries in diverse social contexts.
@@ -153,17 +121,12 @@
 - title: Einfluss von Musik auf die Daueraufmerksamkeit
   type: poster
   authors:
-  - name: Karolina
-    lastname: Gierschik
-  - name: Amelie
-    lastname: Spörer
-  - name: Selina
-    lastname: Schneider
-  - name: Benjamin
-    lastname: Rückerl
-  - name: Sophia
-    lastname: Lindner
-  supervisor: Vivien Vorndran
+    - Gierschik, Karolina
+    - Spörer, Amelie
+    - Schneider, Selina
+    - Rückerl, Benjamin
+    - Lindner, Sophia
+  supervisor: Vorndran, Vivien
   content: Gierschik-Spörer-Schneider-Rückerl-Lindner.pdf
   abstract: >
     Musik kann die Aufmerksamkeitsleistung maßgeblich beeinflussen. Die bisherige Forschung liefert diesbezüglich jedoch heterogene Ergebnisse. In einigen Studien führte individuell ausgewählte Musik zu einer verbesserten Konzentrationsleistung. Andere Studien zeigten wiederum, dass Musik die kognitive Belastung erhöhen kann und somit die Leistung verschlechtern kann. In der vorliegenden Studie wird daher untersucht, ob und inwieweit das Hören von Musik die Aufmerksamkeitsleistung (Reaktionsgeschwindigkeit, Fehler) bei der Bearbeitung einer Daueraufmerksamkeitsaufgabe beeinflusst. Eine Stichprobe von N=42 Studierenden (EG1: n= 12; EG2: n=15; KG: n=15) bearbeitete eine Aufmerksamkeitsaufgabe zur Erhebung der Daueraufmerksamkeit (TAP Daueraufmerksamkeit, Untertest der Testbatterie zur Aufmerksamkeitsprüfung), während sie entweder vorgegebene klassische Musik, selbstgewählte Lieblingsmusik oder keine Musik hörten. Hierfür wurde zunächst eine Baseline erhoben. Im zweiten Durchgang hörten die Teilnehmenden während der Bearbeitung entweder Musik (Klassik oder Lieblingsmusik) oder sie hörten keine Musik. Zudem wurden Fragebögen zur Aufmerksamkeitskontrolle (ACS) sowie allgemeine Informationen zum Musikhören und zur aktuellen Stimmung (ASTS) eingesetzt.
@@ -173,17 +136,11 @@
 - title: Einfluss von Musiktrainingseffekten auf die Emotionserkennung
   type: poster
   authors:
-  - name: Isabel
-    lastname: Hofmann
-  - name: Elli
-    lastname: Keller
-  - name: Alicia
-    lastname: Krause
-  - name: Alex
-    lastname: Langseder
-  - name: Paula
-    lastname: Schmidt
-  supervisor: Vivien Vorndran
+    - Keller, Elli
+    - Krause, Alicia
+    - Langseder, Alex
+    - Schmidt, Paula
+  supervisor: Vorndran, Vivien
   content: Hofmann-Keller-Krause-Langseder-Schmidt.pdf
   abstract: >
     Die Bereiche Musik und Emotionen sind nahezu untrennbar. Bisherige Forschung beschäftigte sich unter anderem mit dem Zusammenhang zwischen Musiktraining und emotionaler Kompetenz. So konnte festgestellt werden, dass Musiktraining die neuronale Entwicklung und somit die kognitive Leistung beeinflussen kann. Musik kann zudem eine fundamentale Komponente emotionaler Intelligenz bilden und dementsprechend die emotional awareness fördern. Forschungsschwerpunkt war hierbei die auditorische Emotionserkennung, wonach Musiker:innen anhand der Sprachprosodie ausgedrückte Emotionen besser wahrnehmen würden als Nicht-Musiker:innen. Die vorliegende Studie hingegen beschäftigt sich anhand des Berlin Emotion Recognition Test (BERT) mit einem möglichen Zusammenhang zwischen der Akkuratheit der visuellen Emotionserkennung und Musiktraining, das vor dem Alter von neun Jahren begonnen wurde.  Ferner wurde die Aktuelle Stimmungsskala (ASTS) und das Emotional Intelligence Inventar (EI4) eingesetzt. Die Proband*innen wurden in einem between subjects design post-hoc nach dieser Altersgrenze von 9 Jahren zwei Gruppen zugeordnet. In die Analyse flossen Daten von N=34 Personen (Musiktraining vor dem 9. Lebensjahr: n=24; Musiktraining nach dem 9. Lebensjahr oder kein Musiktraining: n=10) ein. Es konnte kein signifikanter Unterschied hinsichtlich der Emotionserkennungsfähigkeiten von Menschen mit oder ohne gezielter institutionalisierter musikalischer Förderung außerhalb des schulischen Unterrichts vor dem Alter von neun Jahren und nach dem Alter von neun Jahren nachgewiesen werden. Auch zeigte sich kein Unterschied hinsichtlich der Subskalen Einfühlungsvermögen, Menschenkenntnis, emotionale Selbstkontrolle sowie Überzeugungskraft des EI4 zwischen beiden Gruppen. Deskriptivstatistisch zeigte sich im Mittel jedoch eine höhere Akkuratheit im BERT bei der Gruppe mit Musiktraining vor dem neunten Lebensjahr. Limitationen zeigen sich demnach in der geringen Stichprobengröße. Zukünftig sollte diese Studie an einer größeren Personengruppe sowie mit angepassten Fragen zur Erfassung der musikalischen Ausbildung durchgeführt werden.
@@ -193,93 +150,69 @@
 - title: Die Auswirkungen von Darstellung und Erklärung des Nutriscores auf die Produktauswahl
   type: poster
   authors:
-  - name: Omar
-    lastname: Doar
-  - name: Nicolas
-    lastname: Heil
-  - name: Luisa
-    lastname: Zirpel
-  supervisor: Prof. Dr. Philipp Sprengholz
+    - Doar, Omar
+    - Heil, Nicolas
+    - Zirpel, Luisa
+  supervisor: Sprengholz, Philipp
   content: Doar-Heil-Zirpel.pdf
 
 - title: Effekte von Nährwertangaben in der Werbung auf die wahrgenommene Gesundheit von Produkten und die Kaufabsicht
   type: poster
   authors:
-  - name: Valeska
-    lastname: Biella
-  - name: Maria
-    lastname: Erven
-  - name: Mia Charlotte
-    lastname: Strobach
-  supervisor: Prof. Dr. Philipp Sprengholz
+    - Biella, Valeska
+    - Erven, Maria
+    - Strobach, Mia Charlotte
+  supervisor: Sprengholz, Philipp
   content: Biella-Erven-Strobach.pdf
 
 - title: The influence of Nutri-Score and pricing on purchasing decisions
   type: poster
   authors:
-  - name: Antonia
-    lastname: Sahler
-  - name: Anna Tabea
-    lastname: Feifel
-  - name: Babett
-    lastname: Reich
-  supervisor: Prof. Dr. Philipp Sprengholz
+    - Sahler, Antonia
+    - Feifel, Anna Tabea
+    - Reich, Babett
+  supervisor: Sprengholz, Philipp
   content: Sahler-Feifel-Reich.pdf
 
 - title: "Go Healthy! Der Einfluss des Nutri-Scores auf Kaufentscheidungen"
   type: talk
+  number: T2
   authors:
-  - name: Jakob
-    lastname: von Oheimb
-  - name: Maja
-    lastname: Grobelnik
-  - name: Rosa
-    lastname: Franck
-  supervisor: Prof. Dr. Philipp Sprengholz
+    - von Oheimb, Jakob
+    - Grobelnik, Maja
+    - Franck, Rosa
+  supervisor: Sprengholz, Philipp
   content: von-Oheimb-Grobelnik-Franck.pdf
 
 - title: "Touch and Feel: Exploring Interpersonal Touch and Its Influence on Material Pleasantness"
   type: poster
   authors:
-  - name: Nina
-    lastname: Leimbach
-  - name: Hanna
-    lastname: Straub
-  - name: Sarah
-    lastname: Wittstock
-  - name: Nuria
-    lastname: Romer
-  - name: Helen
-    lastname: Kaps
-  - name: Jana
-    lastname: Wucherer
-  supervisor: Marella Campagna
+    - Leimbach, Nina
+    - Straub, Hanna
+    - Wittstock, Sarah
+    - Romer, Nuria
+    - Kaps, Helen
+    - Wucherer, Jana
+  supervisor: Campagna, Marella
   content: Leimbach-Straub-Wittstock-Romer-Kaps-Wucherer.pdf
 
 - title: "What kind of textures are liked or disliked by people on the autism spectrum? A qualitative study"
   type: poster
   authors:
-  - name: "S."
-    lastname: Brinkers
-  - name: "L."
-    lastname: Kohler
-  - name: "L."
-    lastname: Paul
-  - name: "E."
-    lastname: Tollmien
-  supervisor: Marella Campagna
+    - Brinkers, S.
+    - Kohler, L.
+    - Paul, L.
+    - Tollmien, E.
+  supervisor: Campagna, Marella
   content: Brinkers-Kohler-Paul-Tollmien.pdf
 
 - title: "Schematic image compositions and the conveyance of feelings"
   type: poster
   authors:
-  - name: Jakob Kilian
-    lastname: Heiss
-  - name: Luzie Marie
-    lastname: Ditterich
-  - name: Thuy An Thi
-    lastname: Nguyen
-  supervisor: Vera Hesslinger
+    - Heiss, Jakob Kilian
+    - Ditterich, Luzie Marie
+    - Nguyen, Thuy An Thi
+  supervisor: Hesslinger, Vera
   content: Heiss-Ditterich-Nguyen.pdf
   abstract: >
     The emotional expression of an artwork also appears to be influenced by the composition used. However, if one wants to investigate this influence, the problem arises that works of art are unique and usually too complex to be able to make valid generalizable statements in this regard. In the past, research has been conducted on the effect of symmetry, orientation and movement of lines on valence and arousal. In contrast, this explorative online study focused on the orientation of image breaks resulting from two colored areas. Highly schematized image compositions were used in a randomized sequence. A human figure was inserted into the composition as a reference point for the feelings conveyed. The participants (N = 118) were asked to describe and evaluate the feelings of the human figure in a qualitative and quantitative part. The data suggest that the orientation of image breaks in image compositions could have a strong influence on the conveyance of feelings. Overall, the findings suggest that this approach should be tested for significant effects under controlled conditions and with a larger sample.
@@ -287,17 +220,12 @@
 - title: "Wahrnehmung von Blanks in Gemälden"
   type: poster
   authors:
-  - name: Adrian
-    lastname: Dieterle
-  - name: David
-    lastname: Kogan
-  - name: Hannah
-    lastname: Ehlen
-  - name: Hayat
-    lastname: Isleyen
-  - name: Irmgard
-    lastname: Kiowski
-  supervisor: Vera Hesslinger
+    - Dieterle, Adrian
+    - Kogan, David
+    - Ehlen, Hannah
+    - Isleyen, Hayat
+    - Kiowski, Irmgard
+  supervisor: Hesslinger, Vera
   content: Dieterle-Kogan-Ehlen-Isleyen-Kiowski.pdf
   abstract: >
     Stimmung und Emotionen haben einen starken Einfluss darauf, wie wir die Welt um uns herum wahrnehmen und interpretieren. Die Deutung von Unbestimmtheit in Gemälden, wie sie z.B. durch sogenannte „Blanks“ (Leerstellen) erzeugt wird, sollte besonders durch unsere Stimmung geprägt sein. Das Ziel der vorliegenden Arbeit war es zu untersuchen, ob die Stimmung von Betrachterinnen und Betrachtern sich in der Wahrnehmung und Interpretation verschiedener Kompositionen von Blanks niederschlägt. In einer Online-Studie wurde mittels Mood Induction Procedure (MIP) zunächst die Stimmung manipuliert. Die Teilnehmerinnen und Teilnehmer (N = 85) wurden zufällig einer von drei Bedingungen (positiv / negativ / Kontrollgruppe) zugeteilt und bekamen entsprechend ein positives Video, ein negatives Video oder kein Video zu sehen. Die Stimmung wurde mithilfe der Positive and Negative Affect Schedule (PANAS,; Bluemke, 2017) gemessen und es wurden Urteile zu Ästhetik und Ausdruck von vier Gemälden, die verschiedene Kompositionen von Blanks darstellen, abgefragt. Die Ergebnisse zeigen, dass die Stimmungsinduzierung zwar erfolgreich war, diese jedoch keine Effekte auf die Bewertung der Gemälde hatte. Diese Studie trägt zur Forschung der MIPs bei und erweitert sie um die Komponente der Wahrnehmung von Leerstellen in Gemälden.
@@ -305,15 +233,11 @@
 - title: "The Need for Cognitive Closure and the perception of figurative vs. abstract art"
   type: poster
   authors:
-  - name: Helen
-    lastname: Arnscheid
-  - name: Elisabeth
-    lastname: Else
-  - name: Maya
-    lastname: Heinekamp
-  - name: Carla
-    lastname: Hoffmann
-  supervisor: Vera Hesslinger
+    - Arnscheid, Helen
+    - Else, Elisabeth
+    - Heinekamp, Maya
+    - Hoffmann, Carla
+  supervisor: Hesslinger, Vera
   content: Arnscheid-Else-Heinekamp-Hoffmann.pdf
   abstract: >
     This study investigated how the Need for Cognitive Closure (NCC) influences the perception and evaluation of figurative and abstract artworks. Aesthetic preferences and the perception of artworks are shaped by various factors, including individual differences and inherent characteristics of the artworks. In a quantitative online study, 127 participants evaluated 17 artworks (9 abstract, 8 figurative) in terms of liking, understandability, interest, and completeness. The NCC score was assessed using a standardized questionnaire (16-item German Short Scale to Measure Need for Cognitive Closure, Schlink & Walther, 2007). The results showed that liking was higher for figurative as compared to abstract artworks. Figurative artworks also received higher ratings for understandability and completeness. NCC scores did not significantly influence aesthetic preference. Instead, inherent characteristics of the artworks, such as understandability and completeness, emerged as predictors of liking. Methodological limitations, including the homogeneity of the sample and the lack of systematic variation in the ambiguity of the abstract artworks, leave room for future studies. Our findings contribute to a better understanding of the relationship between cognitive needs, artwork characteristics and aesthetic preference.
@@ -322,21 +246,14 @@
 - title: Musik und Dating
   type: poster
   authors:
-  - name: Susanne
-    lastname: Stier
-  - name: Nina
-    lastname: Jäger
-  - name: Sophie
-    lastname: Götz
-  - name: Lena
-    lastname: Binder
-  - name: Thale
-    lastname: Benning
-  - name: Ian
-    lastname: Philipps
-  - name: Jasmin
-    lastname: Alletter
-  supervisor: Vivien Vorndran
+    - Stier, Susanne
+    - Jäger, Nina
+    - Götz, Sophie
+    - Binder, Lena
+    - Benning, Thale
+    - Philipps, Ian
+    - Alletter, Jasmin
+  supervisor: Vorndran, Vivien
   content: Stier-Jaeger-Goetz-Binder-Benning-Philipps-Alletter.pdf
   abstract: >
     Studien konnten zeigten, dass Personen zwischen 16 bis 64 Jahren durchschnittlich 20.7 Stunden Musik pro Woche hören. Somit nimmt Musik einen erheblichen Einfluss auf das alltägliche Leben. Bisher wurde in Untersuchungen jedoch nur geringer Fokus auf die Songinhalte gelegt, welche gehört werden. Die vorliegende Studie untersucht daher den Einfluss von Musik mit insbesondere frauenfeindlichen Inhalten auf das beim Dating gezeigte Verhalten und auf relevante Datingentscheidungen. Konkret wurde überprüft, ob sich Menschen, die präferiert Musik mit sexistischen Texten hören, beim Dating dementsprechend kongruent mit der eigenen stereotypischen Geschlechterrolle präsentieren und zusätzlich Datingpartner bevorzugen, die ebenfalls mit ihrem entsprechenden Geschlechtsstereotyp übereinstimmen. Neben der Bearbeitung eines Fragebogens -bestehend aus dem Big Five Persönlichkeitstest (B5T), Fragen zum eigenen Verhalten in Dating-Situationen sowie in vergangenen Beziehungen und zum präferierten Verhalten des Partners- wurden auch der aktuelle Lieblingsartist, -Song und -Genre erhoben. Zusätzlich wurden deutsche Songtexte von vier randomisiert abgespielten Songs bezüglich potenziell problematischer Aussagen bewertet. Auch wurden qualitative Analysen unter Verwendung von MAXQDA verwendet. N=64 Studierende (n=47 weiblich; n=16 männlich; n=1 nicht-binär; M=23.2 Jahre) nahmen an der Studie teil und präferierten im Allgemeinen die Musikrichtungen Pop, Rock und Indie. Es zeigte sich kein statistisch signifikanter Effekt für die Präferenz des entsprechenden Geschlechtsstereotyps oder eines traditionellen Rollenbildes im Zusammenhang mit dem Hören von Musik mit frauenfeindlichem Inhalt. Es ergab sich aber eine signifikante negative Korrelation zwischen dem Erkennen des frauenfeindlichen Inhalts eines Liedes und Einstellungen und Verhaltensweisen, die dem traditionellen Rollenbild entsprechen. Die Ergebnisse sind vor dem Hintergrund zu bewerten, dass sowohl ein Psychologiestudium als auch das weibliche Geschlecht eher mit Einstellungen einhergehen, die zu geringem Bestehen auf stereotypische Geschlechterrollen und geringer Präferenz von Musik mit frauenfeindlichen Inhalten führen. Aufgrund dessen war die Anzahl der Versuchspersonen (n=6), die tatsächlich problematische eingeschätzte Musik angegeben haben, zu gering, um reliable Aussagen zu treffen. Infolgedessen würden zukünftige Studien dieses Themenbereichs von einer heterogeneren Stichprobe profitieren.

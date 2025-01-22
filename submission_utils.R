@@ -47,20 +47,30 @@ entry_to_tibble <- function(yaml_entry, empra_year) {
   for(iauthor in 1:length(yaml_entry$authors)) {
     if (iauthor > 1) {
       if (iauthor == length(yaml_entry$authors)) {
-        authors <- str_c(authors, " & ")
+        if (length(yaml_entry$authors) == 2) {
+          authors <- str_c(authors, " & ")
+        } else {
+          authors <- str_c(authors, ", & ")
+        }
       } else {
         authors <- str_c(authors, ", ")
       }
     }
-    authors <- str_c(authors, yaml_entry$authors[[iauthor]]$name, " ", yaml_entry$authors[[iauthor]]$lastname)
+    current_author <- unlist(str_split(yaml_entry$authors[[iauthor]], ", "))
+    authors <- str_c(authors, current_author[2], " ", current_author[1])
   }
+
+  supervisor <- unlist(str_split(yaml_entry$supervisor, ", "))
+
 
   tibble(Title = yaml_entry$title,
          Authors = authors,
-         FirstAuthor = yaml_entry$authors[[1]]$lastname,
-         Supervisor = yaml_entry$supervisor,
+         FirstAuthor = yaml_entry$authors[[1]],
+         SupervisorLastname = yaml_entry$supervisor,
+         Supervisor = glue("{supervisor[2]} {supervisor[1]}"),
          Abstract = yaml_entry$abstract,
          Content = ifelse(is.null(yaml_entry$content), NA, yaml_entry$content),
+         Number = ifelse(is.null(yaml_entry$number), NA, yaml_entry$number),
          Type = yaml_entry$type,
          Year = empra_year)
 }
@@ -74,9 +84,7 @@ entry_to_tibble <- function(yaml_entry, empra_year) {
 load_years_submissions <- function(empra_year) {
   yaml::read_yaml(sprintf("%d/submissions.yaml", empra_year)) |>
   purrr::map(~entry_to_tibble(., empra_year)) |>
-  list_rbind() |>
-  group_by(Type) |>
-  arrange(FirstAuthor)
+  list_rbind()
 }
 
 
@@ -91,8 +99,11 @@ load_years_submissions <- function(empra_year) {
 #' @returns A character vector with the HTML code for the entry.
 submission_html <- function(entry, page_language) {
   cat('::: {.grid}\n')
-    cat('::: {.g-col-10}\n')
-      cat("**", entry$Title, "**<br/>", entry$Authors, " (Supervisor: ", entry$Supervisor, ")<br/>", sep = "")
+  cat('::: {.g-col-1}\n')
+  cat(entry$Number, '\n')
+  cat(':::\n')
+  cat('::: {.g-col-9}\n')
+      cat("**", entry$Title, "**<br/>", entry$Authors, "<br/>_Supervisor: ", entry$Supervisor, "_<br/>", sep = "")
       if (!is.na(entry$Abstract)) cat("<details><summary>", translations[['Abstract']][page_language], "</summary>", entry$Abstract, "</details>")
     cat('\n:::\n')
 
@@ -107,6 +118,11 @@ submission_html <- function(entry, page_language) {
 }
 
 
+#' Make a LaTeX-safe version of a text
+#'
+#' @param text A character vector with the text to escape.
+#'
+#' @returns A character vector with the escaped text.
 escape_latex <- function(text) {
   text <- gsub("&", "\\\\&", text)           # Escape '&'
   text <- gsub("%", "\\\\%", text)           # Escape '%'
@@ -120,6 +136,10 @@ escape_latex <- function(text) {
   text
 }
 
+#' Title, authors, and supervisor in LaTeX
+#'
+#' @param entry A tibble with columns "Title", "Authors", "Supervisor", "Abstract", "Content", "Type", "Year".
+#' @param page_language Language of the page, used to format the HTML code.
 submission_pdf <- function(entry, page_language) {
   cat("\\noindent\n")  # Prevent indentation at the start
   cat("\\begin{minipage}{\\textwidth}\n")
@@ -141,8 +161,21 @@ submission_pdf <- function(entry, page_language) {
 #' @param submission_type String, either "poster" or "talk"
 #' @param page_language Language of the page, used to format the HTML code.
 list_submissions <- function(submissions, submission_type, page_language, format_function=submission_html) {
-  submissions |>
-    filter(Type == submission_type) |>
+  subset <-
+    submissions |>
+    filter(Type == submission_type)
+
+  # adding numbers, if they are not present
+  if (sum(is.na(subset$Number)) == nrow(subset)) {
+    subset <-
+      subset |>
+      arrange(SupervisorLastname, FirstAuthor) |>
+      mutate(Number = glue("{str_to_upper(str_sub(submission_type, 1, 1))}{row_number()}"))
+  }
+
+  subset |>
+    mutate(Index = as.integer(str_extract(Number, "\\d+"))) |>
+    arrange(Index) |>
     slider::slide(~format_function(., page_language)) ->
     hide_return_values
 }
@@ -211,4 +244,34 @@ print_out_empra_conferences <- function(page_language) {
     arrange(Year, FirstAuthor) |>
     group_by(Year) |>
     group_walk(~format_publications_for_year(.y$Year[1], .x, page_language))
+}
+
+
+convert_authors <- function(input) {
+  # Split the input into lines
+  lines <- unlist(strsplit(input, "\n"))
+
+  # Initialize an empty vector for formatted results
+  output <- c()
+
+  # Loop through the lines and process them
+  for (i in seq(1, length(lines), by = 2)) {
+    # Extract the name and lastname lines
+    name_line <- lines[i]
+    lastname_line <- lines[i + 1]
+
+    # Extract the actual values using regex
+    name <- sub(".*name: ", "", name_line)
+    lastname <- sub(".*lastname: ", "", lastname_line)
+
+    # Format and append to the output
+    formatted <- paste0("    - ", lastname, ", ", name)
+    output <- c(output, formatted)
+  }
+
+  # Combine the output into a single string
+  result <- paste0(output, collapse = "\n")
+
+  # Print the result
+  cat(result)
 }

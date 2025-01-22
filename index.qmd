@@ -21,22 +21,30 @@ empra_year <- 2025
 submissions <- load_years_submissions(empra_year)
 ```
 
-
+&nbsp;
 
 ## EMPRA Conference 2025
 
 ### When and Where
 The Empra conference will take place on **Friday, January 24th** from 10 to 14 o’clock. The venue is **M3N/2.32** plus the foyer in front of this lecture room.
 
-### Preliminary program
+### Program
 
-* Welcome address (Prof. Carbon).
-* Keynote talk (Stefan Breitschaft, a former student at the University of Bamberg who is now working at BMW Group).
-* Talk session I.
-* Poster session I.
-* Talk session II.
-* Poster session II. 
+```{r results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
 
+program_df <- do.call(rbind, lapply(yaml::read_yaml(sprintf("%d/program.yaml", empra_year))$program, as.data.frame))
+program_table <-  
+  program_df |>
+  relocate(time, title, place) |>
+  kableExtra::kable(col.names = NULL) |>
+  kableExtra::row_spec(seq(1, nrow(program_df), 2), background="#E8ECF4") |>
+  kableExtra::kable_styling( bootstrap_options = c("striped"))
+
+gsub("<thead>.*</thead>", "", program_table)
+```
 
 ### Talks
 ```{r talks-2025-en, results='asis'}

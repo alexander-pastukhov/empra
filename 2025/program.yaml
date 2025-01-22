@@ -1,0 +1,17 @@
+program:
+  - time: 10:15
+    place: M3N/2.32
+    title: Opening and Welcome Note by Prof. Dr. Carbon
+  - time: 10:30
+    place: M3N/2.32
+    title: Keynote by Stefan Breitschaft
+  - time: 11:00
+    place: M3N/2.32
+    title: Talk session
+  - time: 11:40
+    place: Foyer in front of M3N/2.32
+    title: Poster Session with drinks and snacks
+  - time: 13:40
+    place: M3N/2.32
+    title: Award ceremony and closing
+

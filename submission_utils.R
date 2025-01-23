@@ -98,7 +98,16 @@ entry_to_tibble <- function(yaml_entry, empra_year) {
 load_years_submissions <- function(empra_year) {
   yaml::read_yaml(sprintf("%d/submissions.yaml", empra_year)) |>
   purrr::map(~entry_to_tibble(., empra_year)) |>
-  list_rbind()
+  list_rbind() |>
+
+  # creating consistent numbers, when needed
+  group_by(Type) |>
+  mutate(NeedsNumber = sum(is.na(Number)) == n()) |>
+  arrange(SupervisorLastname, FirstAuthor) |>
+  mutate(Number = ifelse(NeedsNumber, glue("{str_to_upper(str_sub(Type, 1, 1))}{row_number()}"), Number)) |>
+  ungroup() |>
+  mutate(Index = as.integer(str_extract(Number, "\\d+"))) |>
+  arrange(Type, Index)
 }
 
 
@@ -220,20 +229,8 @@ submission_pdf <- function(entry, page_language) {
 #' @param submission_type String, either "poster" or "talk"
 #' @param page_language Language of the page, used to format the HTML code.
 list_submissions <- function(submissions, submission_type, page_language, format_function=submission_html) {
-  subset <-
-    submissions |>
-    filter(Type == submission_type)
-
-  # adding numbers, if they are not present
-  if (sum(is.na(subset$Number)) == nrow(subset)) {
-    subset <-
-      subset |>
-      arrange(SupervisorLastname, FirstAuthor) |>
-      mutate(Number = glue("{str_to_upper(str_sub(submission_type, 1, 1))}{row_number()}"))
-  }
-
-  subset |>
-    mutate(Index = as.integer(str_extract(Number, "\\d+"))) |>
+  submissions |>
+    filter(Type == submission_type) |>
     arrange(Index) |>
     slider::slide(~format_function(., page_language)) ->
     hide_return_values

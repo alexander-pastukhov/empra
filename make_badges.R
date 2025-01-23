@@ -1,6 +1,11 @@
+library(tidyverse)
+
 library(rsvg)
 library(qpdf)
 library(xml2)
+
+empra_year <- 2025
+source("submission_utils.R")
 
 # Read SVG templates
 badge <- list("student" = read_xml("assets/badges/badge.svg"),
@@ -44,7 +49,12 @@ create_badge <- function(empra_year, author) {
   xml_find_first(badge[[author$Role]], "//*[@id='empra-year']") |>  xml_set_text(paste("EMPRA", empra_year))
 
   # Modify the text for the empra-name element
-  xml_find_first(badge[[author$Role]], "//*[@id='empra-name']") |> xml_set_text(author$FirstName)
+  name_node <- xml_find_first(badge[[author$Role]], "//*[@id='empra-name']")
+  xml_set_text(name_node, author$FirstName)
+  # xml_set_attr(name_node, "text-anchor", "middle")  # Horizontal centering
+  # xml_set_attr(name_node, "x", "160.933")              # Center at the middle of the container
+  # xml_set_attr(name_node, "dominant-baseline", "middle")
+
   xml_find_first(badge[[author$Role]], "//*[@id='empra-lastname']") |> xml_set_text(author$LastName)
 
 
@@ -58,6 +68,7 @@ create_badge <- function(empra_year, author) {
 }
 
 walk(1:nrow(all_authors), ~create_badge(empra_year, all_authors[., ]))
+# walk(1, ~create_badge(empra_year, all_authors[., ]))
 
 pdf_files <- map_chr(all_authors$Filename, ~paste0("badges/", empra_year, "/", ., ".pdf"))
 svg_files <- map_chr(all_authors$Filename, ~paste0("badges/", empra_year, "/", ., ".svg"))

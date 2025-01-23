@@ -1,17 +1,37 @@
 program:
   - time: 10:15
     place: M3N/2.32
-    title: Opening and Welcome Note by Prof. Dr. Carbon
+    title:
+    - en: Opening and Welcome Note by Prof. Dr. Carbon
+    - de: Eröffnung und Begrüßung von Prof. Dr. Carbon
   - time: 10:30
     place: M3N/2.32
-    title: Keynote by Stefan Breitschaft
+    title:
+    - en: Keynote by Stefan Breitschaft
+    - de: Keynote von Stefan Breitschaft
   - time: 11:00
     place: M3N/2.32
-    title: Talk session
+    title:
+    - en: Talk session
+    - de: Vortragssitzung
   - time: 11:40
-    place: Foyer in front of M3N/2.32
-    title: Poster Session with drinks and snacks
+    place:
+    - en: "Foyer in front of M3N/2.32"
+    - de: "Foyer vor M3N/2.32"
+    title:
+    - en: "Poster Session with drinks and snacks"
+    - de: "Poster Session mit Getränken und Snacks"
   - time: 13:40
     place: M3N/2.32
-    title: Award ceremony and closing
+    title:
+    - en: Award ceremony and closing
+    - de: Preisverleihung und Abschluss
 
+groups:
+  - "Philipp Sprengholz": Wirkung von Ernährungsampeln
+  - "Vera Hesslinger": Bildbrüche, Blanks, Betrachtung
+  - "Vivien Vorndran": Musik und Entscheidungsfindung
+  - "Marella Campagna": Haptics Aesthetics
+  - "Jakob Roetner": Nur Magie, doch Magie oder einfach Psychologie?
+  - "Itay Goetz": Empirical Aesthetics
+  - "Alexander Pastukhov": Bewußtsein und Wahrnehmung

@@ -27,14 +27,18 @@ Das Empiriepraktikum, auch EMPRA genannt, ist ein praxisorientierter Kurs, der s
 ### Wann und wo
 Die Empra-Konferenz findet am **Freitag, 24. Januar** von 10 bis 14 Uhr statt. Der Veranstaltungsort ist **M3N/2.32** sowie das Foyer vor diesem Vortragsraum.
 
-### Vorläufiges Programm
+### Programm
 
-* Begrüßung (Prof. Carbon).
-* Keynote-Vortrag (Stefan Breitschaft, ehemaliger Student der Universität Bamberg, jetzt bei der BMW Group tätig).
-* Vortragssitzung I.
-* Postersession I.
-* Vortragssitzung II.
-* Postersession II. 
+```{r results='asis'}
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+
+program_html(empra_year, rmarkdown::metadata$lang)
+```
+Programmablauf als [PDF](2025/programme.pdf) herunterladen.
+
+
 
 ### Vorträge
 ```{r talks-2025-de, results='asis'}

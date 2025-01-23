@@ -35,16 +35,10 @@ The Empra conference will take place on **Friday, January 24th** from 10 to 14 o
 #| warning: FALSE
 #| message: FALSE
 
-program_df <- do.call(rbind, lapply(yaml::read_yaml(sprintf("%d/program.yaml", empra_year))$program, as.data.frame))
-program_table <-  
-  program_df |>
-  relocate(time, title, place) |>
-  kableExtra::kable(col.names = NULL) |>
-  kableExtra::row_spec(seq(1, nrow(program_df), 2), background="#E8ECF4") |>
-  kableExtra::kable_styling( bootstrap_options = c("striped"))
-
-gsub("<thead>.*</thead>", "", program_table)
+program_html(empra_year, rmarkdown::metadata$lang)
 ```
+Download program proceedings as [PDF](2025/programme.pdf).
+
 
 ### Talks
 ```{r talks-2025-en, results='asis'}
@@ -61,3 +55,5 @@ list_submissions(submissions, "talk", rmarkdown::metadata$lang)
 #| message: FALSE
 list_submissions(submissions, "poster", rmarkdown::metadata$lang)
 ```
+
+

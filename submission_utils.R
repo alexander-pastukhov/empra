@@ -7,6 +7,17 @@ library(yaml)
 translations <- list("Abstract" = c("en" = "Abstract", "de" = "Abstrakt"))
 
 
+#' Convert from "lastname, firstname" to "firstname lastname"
+#'
+#' @param last_first_name A character vector with the name in the format "lastname, firstname"
+#'
+#' @returns A character vector with the name in the format "firstname lastname"
+to_first_last_name <- function(last_first_name) {
+  name_bits <- unlist(str_split(last_first_name, ", "))
+  paste(name_bits[2], name_bits[1])
+}
+
+
 #' Format authors list
 #'
 #' @param authors_list A list of authors, each author is a list with fields "name", "lastname", and "empra_student" (optional).
@@ -44,30 +55,32 @@ format_authors_list <- function(authors_list) {
 entry_to_tibble <- function(yaml_entry, empra_year) {
   # format authors
   authors <- ""
+  latex_authors <- ""
   for(iauthor in 1:length(yaml_entry$authors)) {
     if (iauthor > 1) {
       if (iauthor == length(yaml_entry$authors)) {
         if (length(yaml_entry$authors) == 2) {
           authors <- str_c(authors, " & ")
+          latex_authors <- str_c(latex_authors, " \\& ")
         } else {
           authors <- str_c(authors, ", & ")
+          latex_authors <- str_c(latex_authors, ", \\& ")
         }
       } else {
         authors <- str_c(authors, ", ")
+        latex_authors <- str_c(latex_authors, ", ")
       }
     }
-    current_author <- unlist(str_split(yaml_entry$authors[[iauthor]], ", "))
-    authors <- str_c(authors, current_author[2], " ", current_author[1])
+    authors <- str_c(authors, to_first_last_name(yaml_entry$authors[[iauthor]]))
+    latex_authors <- str_c(latex_authors, "\\index{", yaml_entry$authors[[iauthor]], "}", to_first_last_name(yaml_entry$authors[[iauthor]]))
   }
-
-  supervisor <- unlist(str_split(yaml_entry$supervisor, ", "))
-
 
   tibble(Title = yaml_entry$title,
          Authors = authors,
+         LatexAuthors = latex_authors,
          FirstAuthor = yaml_entry$authors[[1]],
          SupervisorLastname = yaml_entry$supervisor,
-         Supervisor = glue("{supervisor[2]} {supervisor[1]}"),
+         Supervisor = to_first_last_name(yaml_entry$supervisor),
          Abstract = yaml_entry$abstract,
          Content = ifelse(is.null(yaml_entry$content), NA, yaml_entry$content),
          Number = ifelse(is.null(yaml_entry$number), NA, yaml_entry$number),
@@ -86,6 +99,45 @@ load_years_submissions <- function(empra_year) {
   yaml::read_yaml(sprintf("%d/submissions.yaml", empra_year)) |>
   purrr::map(~entry_to_tibble(., empra_year)) |>
   list_rbind()
+}
+
+
+#' HTML formatted program for a given year
+#'
+#' @param empra_year Year of the program
+#' @param page_language Page language (either "en" or "de")
+#'
+#' @returns A character vector with the HTML code for the program.
+program_html <- function(empra_year, page_language) {
+  # load program from YAML
+  program_as_list <- yaml::read_yaml(sprintf("%d/program.yaml", empra_year))$program
+
+  # convert to flat structure for a given language
+  for(ientry in 1:length(program_as_list)) {
+    entry <- program_as_list[[ientry]]
+    df_entry <- list()
+    for(ifield in 1:length(entry)) {
+      if (is.list(entry[[ifield]])) {
+        for(lang_entry in entry[[ifield]]) {
+          if (names(lang_entry) == page_language) {
+            df_entry[[names(entry[ifield])]] <- lang_entry[[page_language]]
+          }
+        }
+      } else {
+        df_entry[[names(entry[ifield])]] <- entry[[ifield]]
+      }
+    }
+    program_as_list[[ientry]] <- as_tibble(df_entry)
+  }
+  program_df <- list_rbind(program_as_list)
+
+  # format program for html
+  program_df |>
+    relocate(time, title, place) |>
+    rename("When" = time, "What" = title, "Where" = place) |>
+    kableExtra::kable() |>
+    kableExtra::row_spec(seq(1, nrow(program_df), 2), background="#E8ECF4") |>
+    kableExtra::kable_styling( bootstrap_options = c("striped"))
 }
 
 
@@ -149,8 +201,9 @@ escape_latex <- function(text) {
 submission_pdf <- function(entry, page_language) {
   cat("\\noindent\n")  # Prevent indentation at the start
   cat("\\begin{minipage}{\\textwidth}\n")
+  cat("\\marginnote{", entry$Number, "}\n")
   cat("\\begin{center}\n")
-  cat("\\textbf{", escape_latex(entry$Title), "}\\\\\n", escape_latex(entry$Authors), "\\\\\n", sep="")
+  cat("\\textbf{", escape_latex(entry$Title), "}\\\\\n", entry$LatexAuthors, "\\\\\n", sep="")
   cat("Supervisor: ", entry$Supervisor, "\\\\\n", sep="")
   cat("\\end{center}\n")
   cat("\\end{minipage}\n")  # End grouping for header lines
@@ -281,3 +334,6 @@ convert_authors <- function(input) {
   # Print the result
   cat(result)
 }
+
+
+

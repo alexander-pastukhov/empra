@@ -85,6 +85,7 @@ entry_to_tibble <- function(yaml_entry, empra_year) {
          Content = ifelse(is.null(yaml_entry$content), NA, yaml_entry$content),
          Number = ifelse(is.null(yaml_entry$number), NA, yaml_entry$number),
          OSF = ifelse(is.null(yaml_entry$osf), NA, yaml_entry$osf),
+         Prize = ifelse(is.null(yaml_entry$prize), NA, yaml_entry$prize),
          Type = yaml_entry$type,
          Year = empra_year)
 }
@@ -163,6 +164,9 @@ submission_html <- function(entry, page_language) {
   cat('::: {.grid}\n')
   cat('::: {.g-col-1}\n')
   cat(entry$Number, '\n')
+  if (!is.na(entry$Prize)) {
+    cat(sprintf('<br/><br/><img src="assets/icons/%s-prize.svg" alt="Award" style="width:30px;"/>\n', entry$Prize), sep="")
+  }
   cat(':::\n')
   cat('::: {.g-col-9}\n')
       cat("**", entry$Title, "**<br/>", entry$Authors, "<br/>_Supervisor: ", entry$Supervisor, "_<br/>", sep = "")
@@ -172,7 +176,7 @@ submission_html <- function(entry, page_language) {
     cat('::: {.g-col-1}\n')
       if (!is.na(entry$Content)) {
         cat('<a href="', entry$Year, "/", entry$Content, '" target="_blank">',
-            sprintf('<img src="assets/icons/%s.svg" alt="Poster" style="width:30px;"/>', entry$Type),
+            sprintf('<img src="assets/icons/poster.svg" alt="Poster" style="width:30px;"/>', entry$Type),
             '</a>\n', sep="")
       }
     cat(':::\n')

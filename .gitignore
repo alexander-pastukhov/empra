@@ -5,3 +5,5 @@
 
 /.quarto/
 /badges
+
+**/*.quarto_ipynb

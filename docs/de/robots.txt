@@ -1,1 +1,1 @@
-Sitemap: https://alexander-pastukhov.github.io/empra/sitemap.xml
+Sitemap: https://alexander-pastukhov.github.io/empra/de/sitemap.xml

@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alexander-pastukhov.github.io/empra/going-further.html</loc>
-    <lastmod>2025-01-20T20:47:55.347Z</lastmod>
+    <loc>https://alexander-pastukhov.github.io/empra/de/index.html</loc>
+    <lastmod>2025-09-30T11:56:37.411Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexander-pastukhov.github.io/empra/de/going-further.html</loc>
+    <lastmod>2025-09-30T11:56:37.410Z</lastmod>
   </url>
   <url>
     <loc>https://alexander-pastukhov.github.io/empra/index.html</loc>
-    <lastmod>2025-01-24T22:42:32.266Z</lastmod>
+    <lastmod>2025-09-30T11:56:37.411Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexander-pastukhov.github.io/empra/going-further.html</loc>
+    <lastmod>2025-09-30T11:56:37.410Z</lastmod>
   </url>
 </urlset>
